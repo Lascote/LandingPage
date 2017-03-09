@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" >
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<section class="main-container">
+    <header>
+        <div class="logo-container">
+            <a href="#">Logo</a>
+        </div>
+        <div class="container">
+            <a href="#about">О нас</a>
+            <div class="dropdown">
+                <button class="dropbtn">Батуты</button>
+                <div class="dropdown-content">
+                    <a href="#children">Детские</a>
+                    <a href="#manege">Батут-манеж</a>
+                    <a href="#street">Для улицы</a>
+                    <a href="#fitness">Для фитнеса</a>
+                </div>
+            </div>
+            <a href="#contacts">Контакты</a>
+        </div>
+        <div class="call-back-container">
+            <button class="call-back-button" type="button">Заказать звонок</button>
+        </div>
+        <div class="header-contacts-container">
+            <p>+375 (29) 123-45-78</p>
+            <p>+375 (29) 231-47-58</p>
+        </div>
+    </header>
+    <section>
+        <div class="content-container">
+            <div class="preview">
+                <div class="image-container below"><img src="images/img1.jpg"></div>
+                <div class="image-container above"><img src="images/img1.jpg"></div>
+                <input type="button" value="Показать" class="showMoreBtn1" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                <input type="button" value="Показать" class="showMoreBtn2" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+            </div>
+            <div class="aboutUs" id="about">
+                <div class="aboutUs-container">
+                    <div class="aboutUs-title"><h1>Почему мы?</h1></div>
+                    <div class="aboutUs-container-out">
+                        <div class="aboutUs-items-container">
+                            <div class="aboutUs-item">
+                                <img src="images/timel.png" class="aboutUs-image">
+                                <div class="aboutUs-text">
+                                    Bla-bla-bla
+                                </div>
+                            </div>
+                            <div class="aboutUs-item">
+                                <img src="images/timel.png" class="aboutUs-image">
+                                <div class="aboutUs-text">
+                                    Мы располагаем самыми современными технологиями и инновациями для того чтобы сделать вашу жизнь лучше!
+                                </div>
+                            </div>
+                            <div class="aboutUs-item">
+                                <img src="images/timel.png" class="aboutUs-image">
+                                <div class="aboutUs-text">
+                                    Bla-bla-bla
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog">
+                <div class="catalog-container">
+                    <div class="catalog-title" id="children"><h1>Детские батуты</h1></div>
+                    <div class="catalog-row-container">
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/timel.png" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price">200 BYN</p>
+                                <p class="current-price">150 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
+                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                            </div>
+                        </div>
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/timel.png" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price">200 BYN</p>
+                                <p class="current-price">150 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
+                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                            </div>
+                        </div>
+                        <div class="catalog-item">
+                        <div class="catalog-image-container">
+                            <img src="images/timel.png" class="catalog-item-image">
+                        </div>
+                        <div class="catalog-item-text">
+                            <h4><b>John Doe John Doe John Doe</b></h4>
+                            <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                        </div>
+                        <div class="catalog-price-container">
+                            <p class="old-price">200 BYN</p>
+                            <p class="current-price">150 BYN</p>
+                        </div>
+                        <div class="buttons-container">
+                            <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
+                            <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="catalog-row-container">
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/timel.png" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price">200 BYN</p>
+                                <p class="current-price">150 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
+                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                            </div>
+                        </div>
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/timel.png" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price">200 BYN</p>
+                                <p class="current-price">150 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
+                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                            </div>
+                        </div>
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/timel.png" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price">200 BYN</p>
+                                <p class="current-price">150 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
+                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-title" id="manege"><h1>Батуты-манежи</h1></div>
+                    <div class="catalog-row-container">
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/timel.png" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price">200 BYN</p>
+                                <p class="current-price">150 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
+                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                            </div>
+                        </div>
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/timel.png" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price">200 BYN</p>
+                                <p class="current-price">150 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
+                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                            </div>
+                        </div>
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/timel.png" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price">200 BYN</p>
+                                <p class="current-price">150 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
+                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-row-container">
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/timel.png" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price">200 BYN</p>
+                                <p class="current-price">150 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
+                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                            </div>
+                        </div>
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/timel.png" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price">200 BYN</p>
+                                <p class="current-price">150 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
+                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                            </div>
+                        </div>
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/timel.png" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price">200 BYN</p>
+                                <p class="current-price">150 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
+                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-title" id="street"><h1>Для улицы</h1></div>
+                    <div class="catalog-row-container">
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/timel.png" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price">200 BYN</p>
+                                <p class="current-price">150 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
+                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                            </div>
+                        </div>
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/timel.png" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price">200 BYN</p>
+                                <p class="current-price">150 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
+                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                            </div>
+                        </div>
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/timel.png" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price">200 BYN</p>
+                                <p class="current-price">150 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
+                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-row-container">
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/timel.png" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price">200 BYN</p>
+                                <p class="current-price">150 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
+                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                            </div>
+                        </div>
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/timel.png" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price">200 BYN</p>
+                                <p class="current-price">150 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
+                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                            </div>
+                        </div>
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/timel.png" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price">200 BYN</p>
+                                <p class="current-price">150 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
+                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-title" id="fitness"><h1>Для фитнеса</h1></div>
+                    <div class="catalog-row-container">
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/timel.png" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price">200 BYN</p>
+                                <p class="current-price">150 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
+                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                            </div>
+                        </div>
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/timel.png" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price">200 BYN</p>
+                                <p class="current-price">150 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
+                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages">
+                <div class="advantages-container">
+                    <div class="advantages-title"><h1>Наши преимущества</h1></div>
+                    <div class="aboutUs-container-out">
+                        <div class="aboutUs-items-container">
+                            <div class="aboutUs-item">
+                                    <img src="images/timel.png" class="aboutUs-image">
+                                <div class="aboutUs-text">
+                                    Bla-bla-bla
+                                </div>
+                            </div>
+                            <div class="aboutUs-item">
+                                <img src="images/timel.png" class="aboutUs-image">
+                                <div class="aboutUs-text">
+                                    Мы располагаем самыми современными технологиями и инновациями для того чтобы сделать вашу жизнь лучше!
+                                </div>
+                            </div>
+                            <div class="aboutUs-item">
+                                <img src="images/timel.png" class="aboutUs-image">
+                                <div class="aboutUs-text">
+                                    Bla-bla-bla
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="howItWorks">
+                <div class="howItWorks-container">
+                    <div class="howItWorks-title"><h1>Как мы работаем</h1></div>
+                    <div class="howItWorks-container-out">
+                        <div class="howItWorks-items-container">
+                            <div class="howItWorks-item">
+                                <img src="images/timel.png" class="howItWorks-image">
+                                <div class="howItWorks-text">
+                                    Заказываем товар
+                                </div>
+                            </div>
+                            <i class="material-icons arrow" style="font-size: 60px">arrow_forward</i>
+                            <div class="howItWorks-item">
+                                <img src="images/timel.png" class="howItWorks-image">
+                                <div class="howItWorks-text">
+                                    Доставляем товар
+                                </div>
+                            </div>
+                            <i class="material-icons arrow" style="font-size: 60px">arrow_forward</i>
+                            <div class="howItWorks-item">
+                                <img src="images/timel.png" class="howItWorks-image">
+                                <div class="howItWorks-text">
+                                    Вы получаете товар
+                                </div>
+                            </div>
+                            <i class="material-icons arrow" style="font-size: 60px">arrow_forward</i>
+                            <div class="howItWorks-item">
+                                <img src="images/timel.png" class="howItWorks-image">
+                                <div class="howItWorks-text">
+                                    Мы получаем деньги
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews">
+                <div class="reviews-container">
+                    <div class="review-title">
+                        <h1>Отзывы наших клиентов</h1>
+                    </div>
+                    <div class="review-container-row">
+                        <div class="review-container">
+                            <div class="review-image-container">
+                                <img src="images/timel.png" class="review-image">
+                            </div>
+                            <div class="review-text-container">
+                                <div class="review-author">
+                                    <p>Данна Борисова</p>
+                                </div>
+                                <div class="review-text">
+                                    <p>Крутые, крутые, очень крутые батуты, прыгать на них одно удовольствие. Так понравились эти батуты, что купила сразу 5 шутк. Всем очень сильно советую!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-container">
+                            <div class="review-image-container">
+                                <img src="images/timel.png" class="review-image">
+                            </div>
+                            <div class="review-text-container">
+                                <div class="review-author">
+                                    <p>Данна Борисова</p>
+                                </div>
+                                <div class="review-text">
+                                    <p>Крутые, крутые, очень крутые батуты, прыгать на них одно удовольствие. Так понравились эти батуты, что купила сразу 5 шутк. Всем очень сильно советую!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-container-row">
+                        <div class="review-container">
+                            <div class="review-image-container">
+                                <img src="images/timel.png" class="review-image">
+                            </div>
+                            <div class="review-text-container">
+                                <div class="review-author">
+                                    <p>Данна Борисова</p>
+                                </div>
+                                <div class="review-text">
+                                    <p>Крутые, крутые, очень крутые батуты, прыгать на них одно удовольствие. Так понравились эти батуты, что купила сразу 5 шутк. Всем очень сильно советую!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-container">
+                            <div class="review-image-container">
+                                <img src="images/timel.png" class="review-image">
+                            </div>
+                            <div class="review-text-container">
+                                <div class="review-author">
+                                    <p>Данна Борисова</p>
+                                </div>
+                                <div class="review-text">
+                                    <p>Крутые, крутые, очень крутые батуты, прыгать на них одно удовольствие. Так понравились эти батуты, что купила сразу 5 шутк. Всем очень сильно советую!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts" id="contacts">
+                <div class="contacts-title">
+                    <h1>Наши контакты</h1>
+                </div>
+                <div class="contacts-container">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container"></div>
+    </footer>
+
+    <button onclick="goTop()" id="topBtn" title="Вверх">Вверх</button>
+
+    <div id="orderBackground" class="modal-background order-background">
+        <div id="orderWindow" class="order-window">
+            <div class="order-header">
+                <span id="orderClose" class="window-close">&times;</span>
+                <p id="orderProduct" class="order-title"></p>
+            </div>
+            <div class="order-body">
+                <form id="orderForm" action="" method="POST" target="no-target">
+                    <input id="order_fio" placeholder="ФИО*" autocomplete="off"><br>
+                    <input id="order_email" placeholder="Почта" autocomplete="off"><br>
+                    <input id="order_phone" placeholder="Телефон*" autocomplete="off"><br>
+                    <input id="order_address" placeholder="Адрес" autocomplete="off"><br>
+                    <textarea id="order_note" placeholder="Заметка" autocomplete="off"></textarea>
+                    <div id="orderMessage" class="order-message"></div>
+                    <br>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="infoBackground" class="modal-background info-background">
+        <div id="infoWindow" class="info-window">
+            <div class="info-header">
+                <span id="infoClose" class="window-close">&times;</span>
+                <p id="infoProduct" class="info-title"></p>
+            </div>
+            <div class="info-body">
+                <div class="slideshow-container">
+                    <div class="slide-box">
+                        <img id="slide" class="slide" src="">
+                    </div>
+
+                    <a id="arrowPrev" class="prev" onclick="InfoWindow.slider.showSlide(++InfoWindow.slider.current)">&#10094;</a>
+                    <a id="arrowNext" class="next" onclick="InfoWindow.slider.showSlide(--InfoWindow.slider.current)">&#10095;</a>
+                </div>
+                <br>
+
+                <p id="info_product"></p>
+                <p id="info_article"></p>
+                <p id="info_timerDate"></p>
+                <p id="info_priceStock"></p>
+                <p id="info_priceOld"></p>
+                <p id="info_description"></p>
+            </div>
+            <div class="info-footer">
+                <button id="infoOrder" class="info-order" type="submit">Заказать</button>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
