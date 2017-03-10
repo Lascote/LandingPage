@@ -575,6 +575,20 @@
 
     <button onclick="goTop()" id="topBtn" title="Вверх">Вверх</button>
 
+    <div id="messageBackground" class="modal-background order-background">
+        <div id="messageWindow" class="order-window">
+            <div class="message-header">
+                <span id="messageClose" class="window-close">&times;</span>
+            </div>
+            <div class="message-body">
+                <p id="messageText" class="message-text"></p>
+            </div>
+            <div class="info-footer">
+                <button id="messageCloseButton" style="float: right" type="submit">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
     <div id="orderBackground" class="modal-background order-background">
         <div id="orderWindow" class="order-window">
             <div class="order-header">
@@ -587,13 +601,23 @@
                     <p class="order-text" id="fio">Фамилия, Имя</p>
                     <input class="field" id="order_fio" placeholder="Введите фамилию и имя" autocomplete="off">
                     <p class="order-text">Email</p>
-                    <input class="field" id="order_email" placeholder="Введите ваш e-mail" autocomplete="off">
-                    <p class="order-text" id="phone">Телефон</p>
-                    <input class="field" id="order_phone" placeholder="Введите ваш телефон" autocomplete="off">
-                    <p class="order-text" id="address">Адрес доставки</p>
-                    <input id="order_address" placeholder="" autocomplete="off">
-                    <p class="order-text">Комментарии</p>
-                    <textarea id="order_note" placeholder="Ваши комментарии" autocomplete="off"></textarea>
+                    <input id="order_email" placeholder="Введите ваш e-mail" autocomplete="off">
+                    <p class="order-text">Телефон</p>
+                    <input id="order_phone" placeholder="Введите ваш телефон" autocomplete="off">
+
+                    <p class="order-text">Населенный пункт </p>
+                    <input id="order_locality" placeholder="" autocomplete="off">
+                    <p class="order-text">Улица</p>
+                    <input id="order_street" placeholder="" autocomplete="off">
+                    <p class="order-text">Дом</p>
+                    <input id="order_house" placeholder="" autocomplete="off">
+                    <p class="order-text">Корпус</p>
+                    <input id="order_housing" placeholder="" autocomplete="off">
+                    <p class="order-text">Квартира</p>
+                    <input id="order_apartment" placeholder="" autocomplete="off">
+
+                    <p class="order-text">Заметка</p>
+                    <textarea id="order_note" placeholder="Заметка" autocomplete="off"></textarea>
                     <div id="orderMessage" class="order-message"></div>
                     <p class="necessary-text">* - обязательные поля</p>
                     <button type="submit">Оформить заказ</button>
@@ -627,7 +651,7 @@
                 <p id="info_description"></p>
             </div>
             <div class="info-footer">
-                <button id="infoOrder" type="submit">Заказать</button>
+                <button id="infoOrder" class="info-order" type="submit">Заказать</button>
             </div>
         </div>
     </div>
