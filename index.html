@@ -596,11 +596,17 @@
                 <p id="orderProduct" class="order-title"></p>
             </div>
             <div class="order-body">
+                <h2 class="order-header-text">Оформление заказа</h2>
                 <form id="orderForm" action="" method="POST" target="no-target">
-                    <input id="order_fio" placeholder="ФИО*" autocomplete="off"><br>
-                    <input id="order_email" placeholder="Почта" autocomplete="off"><br>
-                    <input id="order_phone" placeholder="Телефон*" autocomplete="off"><br>
-                    <input id="order_address" placeholder="Адрес" autocomplete="off"><br>
+                    <p class="order-text">Фамилия, Имя</p>
+                    <input id="order_fio" placeholder="Введите фамилию и имя" autocomplete="off">
+                    <p class="order-text">Email</p>
+                    <input id="order_email" placeholder="Введите ваш e-mail" autocomplete="off">
+                    <p class="order-text">Телефон</p>
+                    <input id="order_phone" placeholder="Введите ваш телефон" autocomplete="off">
+                    <p class="order-text">Адрес доставки</p>
+                    <input id="order_address" placeholder="" autocomplete="off">
+                    <p class="order-text">Фамилия, Имя</p>
                     <textarea id="order_note" placeholder="Заметка" autocomplete="off"></textarea>
                     <div id="orderMessage" class="order-message"></div>
                     <br>
