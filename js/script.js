@@ -310,7 +310,7 @@ var InfoWindow = {
         // Set Elements
         InfoWindow._product.html(product);
         InfoWindow._ui.product.html(product);
-        InfoWindow._ui.article.html(article);
+        InfoWindow._ui.article.html('Артикул: '+article);
         InfoWindow._ui.description.html(description);
         InfoWindow._ui.priceStock.html(priceStock);
         InfoWindow._ui.priceOld.html(priceOld);

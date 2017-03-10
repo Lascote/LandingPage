@@ -80,16 +80,16 @@
                                 <img src="images/timel.png" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <h4><b>Батут детский 100см</b></h4>
                                 <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                             </div>
                             <div class="catalog-price-container">
-                                <p class="old-price">200 BYN</p>
-                                <p class="current-price">150 BYN</p>
+                                <p class="old-price">99 BYN</p>
+                                <p class="current-price">79 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
-                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Батут детский 100см')">
+                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Батут детский 100см', 'гп 6001', 'Описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание.', '79 BYN', '99 BYN', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
                             </div>
                         </div>
                         <div class="catalog-item">
@@ -601,21 +601,19 @@
                     <p class="order-text" id="fio">Фамилия, Имя</p>
                     <input class="field" id="order_fio" placeholder="Введите фамилию и имя" autocomplete="off">
                     <p class="order-text">Email</p>
-                    <input id="order_email" placeholder="Введите ваш e-mail" autocomplete="off">
-                    <p class="order-text">Телефон</p>
-                    <input id="order_phone" placeholder="Введите ваш телефон" autocomplete="off">
-
-                    <p class="order-text">Населенный пункт </p>
-                    <input id="order_locality" placeholder="" autocomplete="off">
-                    <p class="order-text">Улица</p>
-                    <input id="order_street" placeholder="" autocomplete="off">
-                    <p class="order-text">Дом</p>
-                    <input id="order_house" placeholder="" autocomplete="off">
-                    <p class="order-text">Корпус</p>
-                    <input id="order_housing" placeholder="" autocomplete="off">
-                    <p class="order-text">Квартира</p>
-                    <input id="order_apartment" placeholder="" autocomplete="off">
-
+                    <input class="field" id="order_email" placeholder="Введите ваш e-mail" autocomplete="off">
+                    <p class="order-text" id="phone">Телефон</p>
+                    <input class="field" id="order_phone" placeholder="Введите ваш телефон" autocomplete="off">
+                    <p class="order-text" id="address">Адрес доставки</p>
+                    <div class="address-conatiner">
+                        <input id="order_locality" class="field" placeholder="Населенный пункт" autocomplete="off">
+                        <input id="order_street" class="field" placeholder="Улица" autocomplete="off">
+                        <div class="small-fields-container">
+                            <input id="order_house" class="small-field" placeholder="Дом" autocomplete="off">
+                            <input id="order_housing" class="small-field" placeholder="Корпус" autocomplete="off">
+                            <input id="order_apartment" class="small-field" placeholder="Квартира" autocomplete="off">
+                        </div>
+                    </div>
                     <p class="order-text">Заметка</p>
                     <textarea id="order_note" placeholder="Заметка" autocomplete="off"></textarea>
                     <div id="orderMessage" class="order-message"></div>
@@ -641,14 +639,15 @@
                     <a id="arrowPrev" class="prev" onclick="InfoWindow.slider.showSlide(++InfoWindow.slider.current)">&#10094;</a>
                     <a id="arrowNext" class="next" onclick="InfoWindow.slider.showSlide(--InfoWindow.slider.current)">&#10095;</a>
                 </div>
-                <br>
-
-                <p id="info_product"></p>
-                <p id="info_article"></p>
-                <p id="info_timerDate"></p>
-                <p id="info_priceStock"></p>
-                <p id="info_priceOld"></p>
-                <p id="info_description"></p>
+                <div class="info-container">
+                    <p id="info_product"></p>
+                    <p id="info_article"></p>
+                    <p id="info_description"></p>
+                    <div class="info-price-container">
+                        <p id="info_priceOld"></p>
+                        <p id="info_priceStock"></p>
+                    </div>
+                </div>
             </div>
             <div class="info-footer">
                 <button id="infoOrder" class="info-order" type="submit">Заказать</button>
