@@ -617,8 +617,12 @@ footer {
     overflow-y: auto;
 }
 
-.order-element-error {
+.order-element-fill {
     background-color: rgba(224, 66, 58, 0.44);
+}
+
+.order-element-regex {
+    background-color: rgba(224, 104, 22, 0.44);
 }
 
 .info-header {

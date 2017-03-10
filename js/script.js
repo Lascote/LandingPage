@@ -32,6 +32,7 @@ var OrderAPI = {
         $.each(OrderAPI._ui, function (key) {
             var element = OrderAPI._initElement('order_' + key);
             element.req = false;
+            element.regex = null;
             OrderAPI._ui[key] = element;
         });
 
@@ -50,6 +51,11 @@ var OrderAPI = {
         OrderAPI._ui.locality.req = true;
         OrderAPI._ui.street.req = true;
         OrderAPI._ui.house.req = true;
+        // Regex
+        OrderAPI._ui.email.regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        //OrderAPI._ui.phone.regex = /.*/;
+        OrderAPI._ui.house.regex = /^\d*$/;
+        OrderAPI._ui.apartment.regex = /^\d*$/;
 
         OrderAPI._isInit = true;
     },
@@ -71,17 +77,31 @@ var OrderAPI = {
             throw 'OrderAPI is not initialized.';
         }
 
-        var isOk = true;
+        var isOkFill = true;
+        var isOkRegex = true;
         $.each(OrderAPI._ui, function (key, element) {
             // Если поле пустое и обязательное
-            element.classList.remove('order-element-error');
-            if (element.value == '' && element.req === true) {
-                element.classList.add('order-element-error');
-                isOk = false;
+            element.classList.remove('order-element-fill');
+            element.classList.remove('order-element-regex');
+            if ( element.value === '' && element.req === true ) {
+                element.classList.add('order-element-fill');
+                isOkFill = false;
+            } else if ( element.regex !== null && element.value !== '' ) {
+                if (element.regex.test(element.value) === false) {
+                    element.classList.add('order-element-regex');
+                    isOkRegex = false;
+                }
             }
         });
 
-        return isOk;
+        var errorMessage = '';
+        if (isOkFill === false) {
+            errorMessage += 'Заполните обязательные поля (*)\n';
+        }
+        if (isOkRegex === false) {
+            errorMessage += 'Заполните поля правильно\n';
+        }
+        return errorMessage;
     },
 
     sendOrder: function () {
@@ -89,7 +109,8 @@ var OrderAPI = {
             throw 'OrderAPI is not initialized.';
         }
 
-        if (OrderAPI.checkFields() === true) {
+        var errorMessage = OrderAPI.checkFields();
+        if (errorMessage === '') {
 
             var uri = OrderAPI._baseUri + '?';
             uri += 'product=' + encodeURIComponent(OrderAPI.titleElement.innerText) + '&';
@@ -118,7 +139,7 @@ var OrderAPI = {
         } else {
             OrderAPI.messageElement.classList.add('order-error');
             OrderAPI.messageElement.classList.remove('order-ok');
-            OrderAPI.messageElement.innerText = 'Заполните все обязательные поля.';
+            OrderAPI.messageElement.innerText = errorMessage;
             OrderAPI.setFormEnabled(true);
         }
     },
