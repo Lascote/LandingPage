@@ -92,8 +92,11 @@ var OrderAPI = {
                 OrderAPI.clearFields();
                 OrderAPI.messageElement.classList.add('order-ok');
                 OrderAPI.messageElement.classList.remove('order-error');
-                OrderAPI.messageElement.innerText = 'Ваш заказ принят.';
+                OrderAPI.messageElement.innerText = '';
                 OrderAPI.setFormEnabled(true);
+                OrderWindow.close();
+                InfoWindow.close();
+                Message.show('Спасибо за заказ! Наш менеджер свяжется с вами в ближайшее время.')
             })
                 .fail(function (data, error, type) {
                     OrderAPI.messageElement.classList.add('order-error');
@@ -290,18 +293,62 @@ var InfoWindow = {
     }
 };
 
+var Message = {
+
+    _background: null,
+    _window: null,
+    _text: null,
+
+    _isInit: false,
+    init: function () {
+        Message._background = $('#messageBackground');
+        Message._window = $('#messageWindow');
+        Message._text = $('#messageText');
+
+
+
+        $('#messageCloseButton').on('click', function () {
+            Message.close();
+        });
+        $('#messageClose').on('click', function () {
+            Message.close();
+        });
+        Message._isInit = true;
+    },
+
+    close: function () {
+        if (Message._isInit === false) {
+            throw 'Message is not initialized.';
+        }
+
+        Message._background.hide();
+    },
+
+    show: function (text) {
+        if (Message._isInit === false) {
+            throw 'Message is not initialized.';
+        }
+
+        Message._text.html(text);
+        Message._background.show();
+    }
+};
+
 
 // Весь HTML документ загружен
 $(function () {
     OrderAPI.init();
     OrderWindow.init();
     InfoWindow.init();
+    Message.init();
 
     $(window).on('click', function (event) {
         if (InfoWindow._background.is(event.target)) {
             InfoWindow.close();
         } else if (OrderWindow._background.is(event.target)) {
             OrderWindow.close();
+        } else if (Message._background.is(event.target)) {
+            Message.close();
         }
     });
 

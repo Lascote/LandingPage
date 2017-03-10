@@ -659,6 +659,34 @@ footer {
     background-color: #555;
 }
 
+/* Message */
+.message-text {
+
+}
+
+.message-header {
+    padding: 2px 10px;
+    background-color: #5cb85c;
+    min-height: 40px;
+}
+
+.message-window {
+    display: inline-block;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    box-shadow: 0 0 10px #000;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+
+.message-body {
+    padding: 10px 10px;
+    min-height: 30px;
+    min-width: 70px;
+    margin-bottom: 50px;
+}
 
 /* --- Slides --- */
 
