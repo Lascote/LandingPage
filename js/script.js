@@ -79,10 +79,8 @@ var OrderAPI = {
 
         var isOkFill = true;
         var isOkRegex = true;
+        OrderAPI.clearElementErrors();
         $.each(OrderAPI._ui, function (key, element) {
-            // Если поле пустое и обязательное
-            element.classList.remove('order-element-fill');
-            element.classList.remove('order-element-regex');
             if ( element.value === '' && element.req === true ) {
                 element.classList.add('order-element-fill');
                 isOkFill = false;
@@ -102,6 +100,16 @@ var OrderAPI = {
             errorMessage += 'Заполните поля правильно\n';
         }
         return errorMessage;
+    },
+
+    clearElementErrors: function () {
+        if (OrderAPI._isInit === false) {
+            throw 'OrderAPI is not initialized.';
+        }
+        $.each(OrderAPI._ui, function (key, element) {
+            element.classList.remove('order-element-fill');
+            element.classList.remove('order-element-regex');
+        });
     },
 
     sendOrder: function () {
@@ -162,6 +170,7 @@ var OrderWindow = {
     _background: null,
     _window: null,
     _product: null,
+    showParent: false,
 
     _isInit: false,
     init: function () {
@@ -182,13 +191,23 @@ var OrderWindow = {
 
         OrderWindow._window.hide();
         OrderWindow._background.hide();
+        OrderAPI.clearElementErrors();
+
+        if (OrderWindow.showParent === true) {
+            InfoWindow.showHidden();
+        }
     },
 
-    show: function (product) {
+    show: function (product, showParent) {
         if (OrderWindow._isInit === false) {
             throw 'OrderWindow is not initialized.';
         }
 
+        if (showParent == undefined) {
+            showParent = false;
+        }
+
+        OrderWindow.showParent = showParent;
         OrderWindow._product.text(product);
         OrderWindow._window.show();
         OrderWindow._background.show();
@@ -284,7 +303,8 @@ var InfoWindow = {
         InfoWindow.timer.init(InfoWindow._ui.timerDate);
 
         $('#infoOrder').on('click', function () {
-            OrderWindow.show(InfoWindow._product.text());
+            OrderWindow.show(InfoWindow._product.text(), true);
+            InfoWindow.close();
         });
         $('#infoClose').on('click', function () {
             InfoWindow.close();
@@ -298,6 +318,12 @@ var InfoWindow = {
         }
 
         InfoWindow._background.hide();
+        InfoWindow._window.hide();
+    },
+
+    showHidden: function () {
+        InfoWindow._background.show();
+        InfoWindow._window.show();
     },
 
     show: function (product, article, description, priceStock, priceOld, timerDate, slides) {
@@ -322,6 +348,7 @@ var InfoWindow = {
         InfoWindow.slider.showSlide(0);
 
         InfoWindow._background.show();
+        InfoWindow._window.show();
     }
 };
 
