@@ -692,8 +692,12 @@ footer {
     overflow-y: auto;
 }
 
-.order-element-error {
+.order-element-fill {
     background-color: rgba(224, 66, 58, 0.44);
+}
+
+.order-element-regex {
+    background-color: rgba(224, 104, 22, 0.44);
 }
 
 .info-header {
@@ -799,8 +803,9 @@ footer {
 }
 .slide {
     width: 100%;
+    height: 100%;
     position: absolute;
-    margin: auto;
+    margin: 0;
     top: 0;
     left: 0;
     right: 0;
