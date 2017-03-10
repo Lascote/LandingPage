@@ -5,7 +5,13 @@ var OrderAPI = {
         fio: null,
         email: null,
         phone: null,
-        address: null,
+
+        locality: null,
+        street: null,
+        house: null,
+        housing: null,
+        apartment: null,
+
         note: null
     },
     titleElement: null,
@@ -41,6 +47,9 @@ var OrderAPI = {
         // Обязательные поля
         OrderAPI._ui.fio.req = true;
         OrderAPI._ui.phone.req = true;
+        OrderAPI._ui.locality.req = true;
+        OrderAPI._ui.street.req = true;
+        OrderAPI._ui.house.req = true;
 
         OrderAPI._isInit = true;
     },
@@ -65,7 +74,9 @@ var OrderAPI = {
         var isOk = true;
         $.each(OrderAPI._ui, function (key, element) {
             // Если поле пустое и обязательное
+            element.classList.remove('order-element-error');
             if (element.value == '' && element.req === true) {
+                element.classList.add('order-element-error');
                 isOk = false;
             }
         });
