@@ -28,21 +28,27 @@
             </div>
             <a href="#contacts">Контакты</a>
         </div>
-        <div class="call-back-container">
+        <!--<div class="call-back-container">
             <button class="call-back-button" type="button">Заказать звонок</button>
-        </div>
+        </div>-->
         <div class="header-contacts-container">
-            <p>+375 (29) 123-45-78</p>
-            <p>+375 (29) 231-47-58</p>
+            <p id="vel">+375 (29) 123-45-78</p>
+            <p id="mts">+375 (29) 231-47-58</p>
         </div>
     </header>
     <section>
         <div class="content-container">
             <div class="preview">
-                <div class="image-container below"><img src="images/img1.jpg"></div>
-                <div class="image-container above"><img src="images/img1.jpg"></div>
-                <input type="button" value="Показать" class="showMoreBtn1" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
-                <input type="button" value="Показать" class="showMoreBtn2" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                <div class="image-container"><img src="images/img1.jpg"></div>
+                <div class="preview-after-img">
+                    <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '200.90 руб.', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                    <div class="preview-price"><p>240</p><p style="font-size: 16px; font-weight: 500">BYN</p></div>
+                </div>
+                <div class="image-container"><img src="images/img1.jpg"></div>
+                <div class="preview-after-img">
+                    <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '200.90 руб.', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                    <div class="preview-price"><p>340</p><p style="font-size: 16px; font-weight: 500">BYN</p></div>
+                </div>
             </div>
             <div class="aboutUs" id="about">
                 <div class="aboutUs-container">
@@ -50,21 +56,43 @@
                     <div class="aboutUs-container-out">
                         <div class="aboutUs-items-container">
                             <div class="aboutUs-item">
-                                <img src="images/timel.png" class="aboutUs-image">
+                                <div class="aboutUs-image-container">
+                                    <img src="images/about/10years.png">
+                                </div>
                                 <div class="aboutUs-text">
-                                    Bla-bla-bla
+                                    На рынке 10 лет
                                 </div>
                             </div>
                             <div class="aboutUs-item">
-                                <img src="images/timel.png" class="aboutUs-image">
+                                <div class="aboutUs-image-container">
+                                    <img src="images/about/plant.png" class="aboutUs-image">
+                                </div>
                                 <div class="aboutUs-text">
-                                    Мы располагаем самыми современными технологиями и инновациями для того чтобы сделать вашу жизнь лучше!
+                                    Прямые поставки от производителей
                                 </div>
                             </div>
                             <div class="aboutUs-item">
-                                <img src="images/timel.png" class="aboutUs-image">
+                                <div class="aboutUs-image-container">
+                                    <img src="images/about/quality.png" class="aboutUs-image">
+                                </div>
                                 <div class="aboutUs-text">
-                                    Bla-bla-bla
+                                    Только качественный товар
+                                </div>
+                            </div>
+                            <div class="aboutUs-item">
+                                <div class="aboutUs-image-container">
+                                    <img src="images/about/car.png" class="aboutUs-image">
+                                </div>
+                                <div class="aboutUs-text">
+                                    Бесплатная доставка
+                                </div>
+                            </div>
+                            <div class="aboutUs-item">
+                                <div class="aboutUs-image-container">
+                                    <img src="images/about/gift.png" class="aboutUs-image">
+                                </div>
+                                <div class="aboutUs-text">
+                                    Подарки при каждой покупке
                                 </div>
                             </div>
                         </div>
@@ -77,106 +105,142 @@
                     <div class="catalog-row-container">
                         <div class="catalog-item">
                             <div class="catalog-image-container">
-                                <img src="images/timel.png" class="catalog-item-image">
+                                <img src="images/catalog/gp060001.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>Батут детский 100см</b></h4>
+                                <h4><b>LECO 100см</b></h4>
                                 <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                             </div>
                             <div class="catalog-price-container">
-                                <p class="old-price">99 BYN</p>
-                                <p class="current-price">79 BYN</p>
+                                <p class="old-price" style="display: none">99 BYN</p>
+                                <p class="current-price">69 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Батут детский 100см')">
-                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Батут детский 100см', 'гп 6001', 'Описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание.', '79 BYN', '99 BYN', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('LECO 100см')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('LECO 100см', 'гп060001', 'Описание.', '69 BYN', '79 BYN', '', ['images/catalog/gp060001.jpg', 'images/catalog/gp060001_2.jpg'])">
                             </div>
                         </div>
                         <div class="catalog-item">
                             <div class="catalog-image-container">
-                                <img src="images/timel.png" class="catalog-item-image">
+                                <img src="images/catalog/gp060002.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <h4><b>LECO 120см</b></h4>
                                 <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                             </div>
                             <div class="catalog-price-container">
-                                <p class="old-price">200 BYN</p>
-                                <p class="current-price">150 BYN</p>
+                                <p class="old-price" style="display: none;">200 BYN</p>
+                                <p class="current-price">85 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
-                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('LECO 120см')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('LECO 120см', 'гп060002', 'описание.', '85 BYN', '', '', ['images/catalog/gp060002.jpg', 'images/catalog/gp060002_2.jpg'])">
                             </div>
                         </div>
                         <div class="catalog-item">
                         <div class="catalog-image-container">
-                            <img src="images/timel.png" class="catalog-item-image">
+                            <img src="images/catalog/gp060003.jpg" class="catalog-item-image">
                         </div>
                         <div class="catalog-item-text">
-                            <h4><b>John Doe John Doe John Doe</b></h4>
+                            <h4><b>LECO 135см</b></h4>
                             <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                         </div>
                         <div class="catalog-price-container">
-                            <p class="old-price">200 BYN</p>
-                            <p class="current-price">150 BYN</p>
+                            <p class="old-price" style="display: none">200 BYN</p>
+                            <p class="current-price">89 BYN</p>
                         </div>
                         <div class="buttons-container">
-                            <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
-                            <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                            <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('LECO 135см')">
+                            <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('LECO 135см', 'гп060003', 'описание.', '89 BYN', '', '', ['images/catalog/gp060003.jpg', 'images/catalog/gp060003_2.jpg'])">
                         </div>
                         </div>
                     </div>
                     <div class="catalog-row-container">
                         <div class="catalog-item">
                             <div class="catalog-image-container">
-                                <img src="images/timel.png" class="catalog-item-image">
+                                <img src="images/catalog/gp060008.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <h4><b>LECO 160см</b></h4>
                                 <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                             </div>
                             <div class="catalog-price-container">
-                                <p class="old-price">200 BYN</p>
-                                <p class="current-price">150 BYN</p>
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">109 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
-                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('LECO 160см')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('LECO 160см', 'гп060008', 'описание.', '109 BYN', '', '', ['images/catalog/gp060008.jpg', 'images/catalog/gp060008_2.jpg'])">
                             </div>
                         </div>
                         <div class="catalog-item">
                             <div class="catalog-image-container">
-                                <img src="images/timel.png" class="catalog-item-image">
+                                <img src="images/catalog/gp6001.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <h4><b>Leco-IT Home 100см</b></h4>
                                 <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                             </div>
                             <div class="catalog-price-container">
-                                <p class="old-price">200 BYN</p>
-                                <p class="current-price">150 BYN</p>
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">79 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
-                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 100см')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 100см', 'гп6001', 'Длиннннннннннное описание.', '79 BYN', '', '', ['images/catalog/gp6001.jpg', 'images/catalog/gp6001_2.jpg'])">
                             </div>
                         </div>
                         <div class="catalog-item">
                             <div class="catalog-image-container">
-                                <img src="images/timel.png" class="catalog-item-image">
+                                <img src="images/catalog/gp6005.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <h4><b>Leco-IT Home 120см</b></h4>
                                 <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                             </div>
                             <div class="catalog-price-container">
-                                <p class="old-price">200 BYN</p>
-                                <p class="current-price">150 BYN</p>
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">95 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
-                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 120см')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 120см', 'гп6005', 'Длиннннннннннное описание.', '95 BYN', '', '', ['images/catalog/gp6005.jpg', 'images/catalog/gp6005_2.jpg'])">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-row-container">
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/catalog/gp6010.jpg" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>Leco-IT Home 135см</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">109 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 135см')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 135см', 'гп6010', 'Длиннннннннннное описание.', '109 BYN', '', '', ['images/catalog/gp6010.jpg', 'images/catalog/gp6010_2.jpg'])">
+                            </div>
+                        </div>
+                        <div class="catalog-item">
+                            <div class="catalog-image-container">
+                                <img src="images/catalog/gp6015.jpg" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>Leco-IT Home 160см</b></h4>
+                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">129 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 160см')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 160см', 'гп6015', 'Длиннннннннннное описание.', '129 BYN', '', '', ['images/catalog/gp6015.jpg', 'images/catalog/gp6015_2.jpg'])">
                             </div>
                         </div>
                     </div>
@@ -184,106 +248,106 @@
                     <div class="catalog-row-container">
                         <div class="catalog-item">
                             <div class="catalog-image-container">
-                                <img src="images/timel.png" class="catalog-item-image">
+                                <img src="images/catalog/gp060004.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <h4><b>Leco-IT Home 135см с сеткой</b></h4>
                                 <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                             </div>
                             <div class="catalog-price-container">
-                                <p class="old-price">200 BYN</p>
-                                <p class="current-price">150 BYN</p>
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">185 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
-                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 135см с сеткой')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 135см с сеткой', 'гп060004', 'Длиннннннннннное описание.', '185 BYN', '', '', ['images/catalog/gp060004.jpg', 'images/catalog/gp060004_2.jpg'])">
                             </div>
                         </div>
                         <div class="catalog-item">
                             <div class="catalog-image-container">
-                                <img src="images/timel.png" class="catalog-item-image">
+                                <img src="images/catalog/gp060005.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <h4><b>Leco-IT Home 160см с сеткой</b></h4>
                                 <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                             </div>
                             <div class="catalog-price-container">
-                                <p class="old-price">200 BYN</p>
-                                <p class="current-price">150 BYN</p>
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">220 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
-                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 160см с сеткой')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 160см с сеткой', 'гп060005', 'Длиннннннннннное описание.', '220 BYN', '', '', ['images/catalog/gp060005.jpg', 'images/catalog/gp060005_2.jpg', 'images/catalog/gp060005_3.jpg'])">
                             </div>
                         </div>
                         <div class="catalog-item">
                             <div class="catalog-image-container">
-                                <img src="images/timel.png" class="catalog-item-image">
+                                <img src="images/catalog/gp060006.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <h4><b>Leco-IT Home 180см с сеткой</b></h4>
                                 <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                             </div>
                             <div class="catalog-price-container">
-                                <p class="old-price">200 BYN</p>
-                                <p class="current-price">150 BYN</p>
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">260 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
-                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 180см с сеткой')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 180см с сеткой', 'гп060006', 'Длиннннннннннное описание.', '260 BYN', '', '', ['images/catalog/gp060006.jpg', 'images/catalog/gp060006_2.jpg'])">
                             </div>
                         </div>
                     </div>
                     <div class="catalog-row-container">
                         <div class="catalog-item">
                             <div class="catalog-image-container">
-                                <img src="images/timel.png" class="catalog-item-image">
+                                <img src="images/catalog/gp060115.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <h4><b>Leco Starter 210см с ограждением</b></h4>
                                 <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                             </div>
                             <div class="catalog-price-container">
-                                <p class="old-price">200 BYN</p>
-                                <p class="current-price">150 BYN</p>
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">365 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
-                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco Starter 210см с ограждением')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco Starter 210см с ограждением', 'гп060115', 'Длиннннннннннноеописание.', '365 BYN', '', '', ['images/catalog/gp060115.jpg', 'images/catalog/gp060115_2.jpg'])">
                             </div>
                         </div>
                         <div class="catalog-item">
                             <div class="catalog-image-container">
-                                <img src="images/timel.png" class="catalog-item-image">
+                                <img src="images/catalog/gp060117.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <h4><b>Leco Starter 270см с ограждением</b></h4>
                                 <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                             </div>
                             <div class="catalog-price-container">
-                                <p class="old-price">200 BYN</p>
-                                <p class="current-price">150 BYN</p>
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">440 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
-                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco Starter 270см с ограждением')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco Starter 270см с ограждением', 'гп060117', 'Длиннннннннннноеописание.', '440 BYN', '', '', ['images/catalog/gp060117.jpg', 'images/catalog/gp060117_2.jpg'])">
                             </div>
                         </div>
                         <div class="catalog-item">
                             <div class="catalog-image-container">
-                                <img src="images/timel.png" class="catalog-item-image">
+                                <img src="images/catalog/gp060119.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <h4><b>Leco Starter 310см с ограждением</b></h4>
                                 <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                             </div>
                             <div class="catalog-price-container">
-                                <p class="old-price">200 BYN</p>
-                                <p class="current-price">150 BYN</p>
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">510 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
-                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco Starter 310см с ограждением')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco Starter 310см с ограждением', 'гп060119', 'Длиннннннннннноеописание.', '510 BYN', '', '', ['images/catalog/gp060119.jpg', 'images/catalog/gp060119_2.jpg'])">
                             </div>
                         </div>
                     </div>
@@ -291,106 +355,106 @@
                     <div class="catalog-row-container">
                         <div class="catalog-item">
                             <div class="catalog-image-container">
-                                <img src="images/timel.png" class="catalog-item-image">
+                                <img src="images/catalog/gp060022.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <h4><b>Leco-IT Outdoor 230см с ограждением</b></h4>
                                 <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                             </div>
                             <div class="catalog-price-container">
-                                <p class="old-price">200 BYN</p>
-                                <p class="current-price">150 BYN</p>
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">545 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
-                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Outdoor 230см с ограждением')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Outdoor 230см с ограждением', 'гп060022', 'Длиннннннннннноеописание.', '545 BYN', '', '', ['images/catalog/gp060022.jpg', 'images/catalog/gp060022_2.jpg'])">
                             </div>
                         </div>
                         <div class="catalog-item">
                             <div class="catalog-image-container">
-                                <img src="images/timel.png" class="catalog-item-image">
+                                <img src="images/catalog/gp060024.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <h4><b>Leco-IT Outdoor 270см с ограждением</b></h4>
                                 <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                             </div>
                             <div class="catalog-price-container">
-                                <p class="old-price">200 BYN</p>
-                                <p class="current-price">150 BYN</p>
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">580 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
-                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Outdoor 270см с ограждением')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Outdoor 270см с ограждением', 'гп060024', 'Длиннннннннннноеописание.', '580 BYN', '', '', ['images/catalog/gp060024.jpg', 'images/catalog/gp060024_2.jpg'])">
                             </div>
                         </div>
                         <div class="catalog-item">
                             <div class="catalog-image-container">
-                                <img src="images/timel.png" class="catalog-item-image">
+                                <img src="images/catalog/gp060026.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <h4><b>Leco-IT Outdoor 310см с ограждением</b></h4>
                                 <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                             </div>
                             <div class="catalog-price-container">
-                                <p class="old-price">200 BYN</p>
-                                <p class="current-price">150 BYN</p>
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">620 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
-                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Outdoor 310см с ограждением')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Outdoor 310см с ограждением', 'гп060026', 'Длиннннннннннноеописание.', '620 BYN', '', '', ['images/catalog/gp060026.jpg', 'images/catalog/gp060026_2.jpg'])">
                             </div>
                         </div>
                     </div>
                     <div class="catalog-row-container">
                         <div class="catalog-item">
                             <div class="catalog-image-container">
-                                <img src="images/timel.png" class="catalog-item-image">
+                                <img src="images/catalog/gp060040.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <h4><b>Leco-IT Street 370см с ограждением</b></h4>
                                 <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                             </div>
                             <div class="catalog-price-container">
-                                <p class="old-price">200 BYN</p>
-                                <p class="current-price">150 BYN</p>
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">730 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
-                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Street 370см с ограждением')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Street 370см с ограждением', 'гп060040', 'Длиннннннннннноеописание.', '730 BYN', '', '', ['images/catalog/gp060040.jpg'])">
                             </div>
                         </div>
                         <div class="catalog-item">
                             <div class="catalog-image-container">
-                                <img src="images/timel.png" class="catalog-item-image">
+                                <img src="images/catalog/gp060042.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <h4><b>Leco-IT Street 420см с ограждением</b></h4>
                                 <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                             </div>
                             <div class="catalog-price-container">
-                                <p class="old-price">200 BYN</p>
-                                <p class="current-price">150 BYN</p>
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">860 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
-                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Street 420см с ограждением')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Street 420см с ограждением', 'гп060042', 'Длиннннннннннноеописание.', '860 BYN', '', '', ['images/catalog/gp060042.jpg', 'images/catalog/gp060042_2.jpg'])">
                             </div>
                         </div>
                         <div class="catalog-item">
                             <div class="catalog-image-container">
-                                <img src="images/timel.png" class="catalog-item-image">
+                                <img src="images/catalog/gp060044.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <h4><b>Leco-IT Street 470см с ограждением</b></h4>
                                 <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                             </div>
                             <div class="catalog-price-container">
-                                <p class="old-price">200 BYN</p>
-                                <p class="current-price">150 BYN</p>
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">990 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
-                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Street 470см с ограждением')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Street 470см с ограждением', 'гп060044', 'Длиннннннннннноеописание.', '990 BYN', '', '', ['images/catalog/gp060044.jpg', 'images/catalog/gp060044_2.jpg'])">
                             </div>
                         </div>
                     </div>
@@ -398,36 +462,36 @@
                     <div class="catalog-row-container">
                         <div class="catalog-item">
                             <div class="catalog-image-container">
-                                <img src="images/timel.png" class="catalog-item-image">
+                                <img src="images/catalog/gp060254.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <h4><b>Leco-IT Fit 135см</b></h4>
                                 <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                             </div>
                             <div class="catalog-price-container">
-                                <p class="old-price">200 BYN</p>
-                                <p class="current-price">150 BYN</p>
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">260 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
-                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Fit 135см')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Fit 135см', 'гп060254', 'Длиннннннннннноеописание.', '260 BYN', '', '', ['images/catalog/gp060254.jpg', 'images/catalog/gp060254_2.jpg'])">
                             </div>
                         </div>
                         <div class="catalog-item">
                             <div class="catalog-image-container">
-                                <img src="images/timel.png" class="catalog-item-image">
+                                <img src="images/catalog/gp060256.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>John Doe John Doe John Doe</b></h4>
+                                <h4><b>Leco-IT Fit 160см</b></h4>
                                 <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
                             </div>
                             <div class="catalog-price-container">
-                                <p class="old-price">200 BYN</p>
-                                <p class="current-price">150 BYN</p>
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">330 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="makeOrderButton" onclick="OrderWindow.show('Товар #1')">
-                                <input type="button" value="Показать" class="showMoreButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '<s>200.90 руб.</s>', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Fit 160см')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Fit 160см', 'гп060256', 'Длиннннннннннноеописание.', '330 BYN', '', '', ['images/catalog/gp060256.jpg', 'images/catalog/gp060256_2.jpg'])">
                             </div>
                         </div>
                     </div>
