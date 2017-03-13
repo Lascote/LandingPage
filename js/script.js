@@ -341,7 +341,7 @@ var InfoWindow = {
         InfoWindow._ui.priceStock.html(priceStock);
         InfoWindow.timer.countDownDate = new Date(timerDate).getTime();
 
-        if (priceOld === null) {
+        if (priceOld === null || priceOld === '') {
             InfoWindow._ui.priceOld.hide();
         } else {
             InfoWindow._ui.priceOld.html(priceOld);
