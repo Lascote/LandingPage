@@ -1,5 +1,6 @@
 <?php
 $product = htmlentities($_GET['product']);
+$article = htmlentities($_GET['article']);
 $fio = htmlentities($_GET['fio']);
 $email = htmlentities($_GET['email']);
 $phone = htmlentities($_GET['phone']);
@@ -24,6 +25,7 @@ $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
 $message = "
     Товар: <u>$product</u><br>
+    Артикул: <u>$article</u><br>
     Фамилия, Имя: $fio<br>
     Email: $email<br>
     Телефон: $phone<br>

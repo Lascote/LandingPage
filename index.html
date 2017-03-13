@@ -130,7 +130,7 @@
                                 <p class="current-price">85 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('LECO 120см')">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('LECO 120см', 'гп060002')">
                                 <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('LECO 120см', 'гп060002', 'описание.', '85 BYN', '228 BYN', '', ['images/catalog/gp060002.jpg', 'images/catalog/gp060002_2.jpg'], 2000)">
                             </div>
                         </div>
@@ -657,6 +657,7 @@
             <div class="order-header">
                 <span id="orderClose" class="window-close">&times;</span>
                 <p id="orderProduct" class="order-title"></p>
+                <p id="orderArticle" style="display: none;"></p>
             </div>
             <div class="order-body">
                 <h2>Оформление заказа</h2>

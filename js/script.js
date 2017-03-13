@@ -15,6 +15,7 @@ var OrderAPI = {
         note: null
     },
     titleElement: null,
+    articleElement: null,
     messageElement: null,
     formElement: null,
 
@@ -37,6 +38,7 @@ var OrderAPI = {
         });
 
         OrderAPI.titleElement = OrderAPI._initElement('orderProduct');
+        OrderAPI.articleElement = OrderAPI._initElement('orderArticle');
         OrderAPI.messageElement = OrderAPI._initElement('orderMessage');
         OrderAPI.formElement = OrderAPI._initElement('orderForm');
         OrderAPI.formElement.onsubmit = function () {
@@ -122,9 +124,10 @@ var OrderAPI = {
 
             var uri = OrderAPI._baseUri + '?';
             uri += 'product=' + encodeURIComponent(OrderAPI.titleElement.innerText) + '&';
+            uri += 'article=' + encodeURIComponent(OrderAPI.articleElement.innerText) + '&';
+            console.log(OrderAPI.articleElement.innerText);
 
             $.each(OrderAPI._ui, function (key, element) {
-
                 uri += key + '=' + encodeURIComponent(element.value) + '&';
             });
 
@@ -170,6 +173,7 @@ var OrderWindow = {
     _background: null,
     _window: null,
     _product: null,
+    _article: null,
     showParent: false,
 
     _isInit: false,
@@ -177,6 +181,7 @@ var OrderWindow = {
         OrderWindow._background = $('#orderBackground');
         OrderWindow._window = $('#orderWindow');
         OrderWindow._product = $('#orderProduct');
+        OrderWindow._article = $('#orderArticle');
 
         $('#orderClose').on('click', function () {
             OrderWindow.close();
@@ -198,7 +203,7 @@ var OrderWindow = {
         }
     },
 
-    show: function (product, showParent) {
+    show: function (product, article, showParent) {
         if (OrderWindow._isInit === false) {
             throw 'OrderWindow is not initialized.';
         }
@@ -206,8 +211,13 @@ var OrderWindow = {
         if (showParent == undefined) {
             showParent = false;
         }
+        if (article == undefined) {
+            article = '';
+        }
 
         OrderWindow.showParent = showParent;
+
+        OrderWindow._article.text(article);
         OrderWindow._product.text(product);
         OrderWindow._window.show();
         OrderWindow._background.show();
@@ -304,7 +314,7 @@ var InfoWindow = {
         InfoWindow.timer.init(InfoWindow._ui.timerDate);
 
         $('#infoOrder').on('click', function () {
-            OrderWindow.show(InfoWindow._product.text(), true);
+            OrderWindow.show(InfoWindow._product.text(), InfoWindow._ui.article.text(), true);
             InfoWindow.close();
         });
         $('#infoClose').on('click', function () {
