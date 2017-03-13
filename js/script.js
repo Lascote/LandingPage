@@ -393,6 +393,47 @@ var Message = {
     }
 };
 
+function setElementTimer(id, countDownDate) {
+    var element = document.getElementById(id);
+    if (element === null) {
+        return;
+    }
+
+    if (element.dateTimer !== undefined) {
+        clearInterval(element.dateTimer);
+    }
+
+    element.dateTimer = setInterval(function (countDownDate, element) {
+        if (countDownDate === null) {
+            return;
+        }
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        if (distance < 0) {
+            distance = 0;
+        }
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        for (var i = 0; i < element.children.length; i++) {
+            var elem = element.children[i];
+            if (elem.classList.contains('d-timer') === true) {
+                elem.innerText = days;
+            } else if (elem.classList.contains('h-timer') === true) {
+                elem.innerText = hours;
+            } else if (elem.classList.contains('m-timer') === true) {
+                elem.innerText = minutes;
+            } else if (elem.classList.contains('s-timer') === true) {
+                elem.innerText = seconds;
+            }
+        }
+    }, 1000, new Date(countDownDate).getTime(), element);
+
+}
+
 
 // Весь HTML документ загружен
 $(function () {
@@ -400,6 +441,8 @@ $(function () {
     OrderWindow.init();
     InfoWindow.init();
     Message.init();
+
+    //setElementTimer('testTimer', '2017-03-30T00:00:00');
 
     $(window).on('click', function (event) {
         if (InfoWindow._background.is(event.target)) {
