@@ -339,8 +339,14 @@ var InfoWindow = {
         InfoWindow._ui.article.html('Артикул: '+article);
         InfoWindow._ui.description.html(description);
         InfoWindow._ui.priceStock.html(priceStock);
-        InfoWindow._ui.priceOld.html(priceOld);
         InfoWindow.timer.countDownDate = new Date(timerDate).getTime();
+
+        if (priceOld === null) {
+            InfoWindow._ui.priceOld.hide();
+        } else {
+            InfoWindow._ui.priceOld.html(priceOld);
+            InfoWindow._ui.priceOld.show();
+        }
 
         InfoWindow.timer._timerFunc(InfoWindow._ui.timerDate);
 
