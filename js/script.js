@@ -125,7 +125,6 @@ var OrderAPI = {
             var uri = OrderAPI._baseUri + '?';
             uri += 'product=' + encodeURIComponent(OrderAPI.titleElement.innerText) + '&';
             uri += 'article=' + encodeURIComponent(OrderAPI.articleElement.innerText) + '&';
-            console.log(OrderAPI.articleElement.innerText);
 
             $.each(OrderAPI._ui, function (key, element) {
                 uri += key + '=' + encodeURIComponent(element.value) + '&';
@@ -258,6 +257,12 @@ var InfoWindow = {
         },
         init: function () {
             InfoWindow.slider._slideElement = $('#slide');
+            InfoWindow.slider._slideElement.on('click', function (event) {
+                var modal = document.getElementById('imageModal');
+                var modalImg = document.getElementById('imageImg');
+                modal.style.display = "block";
+                modalImg.src = event.target.src;
+            });
         }
     },
     timer: {
@@ -477,6 +482,10 @@ $(function () {
             OrderWindow.close();
         } else if (Message._background.is(event.target)) {
             Message.close();
+        } else if (Message._background.is(event.target)) {
+            Message.close();
+        } else if ($('#imageModal').is(event.target)) {
+            $('#imageModal').hide();
         }
     });
 
