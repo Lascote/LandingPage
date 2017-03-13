@@ -220,6 +220,7 @@ var InfoWindow = {
     _window: null,
     
     slider : {
+        slideInterval: null,
         _slideElement: null,
         slides: [],
         current: 0,
@@ -326,7 +327,7 @@ var InfoWindow = {
         InfoWindow._window.show();
     },
 
-    show: function (product, article, description, priceStock, priceOld, timerDate, slides) {
+    show: function (product, article, description, priceStock, priceOld, timerDate, slides, slideInterval) {
         if (InfoWindow._isInit === false) {
             throw 'InfoWindow is not initialized.';
         }
@@ -352,6 +353,15 @@ var InfoWindow = {
 
         InfoWindow.slider.slides = slides;
         InfoWindow.slider.showSlide(0);
+        if (InfoWindow.slider.slideInterval !== null) {
+            clearInterval(InfoWindow.slider.slideInterval);
+        }
+
+        if (slideInterval !== null && slideInterval !== undefined && slides.length > 1) {
+            InfoWindow.slider.slideInterval = setInterval(function () {
+                InfoWindow.slider.showSlide(++InfoWindow.slider.current);
+            }, slideInterval);
+        }
 
         InfoWindow._background.show();
         InfoWindow._window.show();
