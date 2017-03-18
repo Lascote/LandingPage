@@ -13,7 +13,7 @@
 <section class="main-container">
     <header>
         <div class="logo-container">
-            <a href="#">Logo</a>
+            <a href="#"><img src="images/header/logo.png"></a>
         </div>
         <div class="container">
             <a href="#about">О нас</a>
@@ -36,15 +36,15 @@
     <section>
         <div class="content-container">
             <div class="preview">
-                <div class="image-container"><img src="images/img1.jpg"></div>
-                <div class="preview-after-img">
-                    <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '200.90 руб.', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                <div class="preview-item">
+                    <div class="image-container"><img src="images/catalog/252.png"></div>
                     <div class="preview-price"><p>240</p><p style="font-size: 16px; font-weight: 500">BYN</p></div>
+                    <input type="button" value="Описание" class="preview-button orderButton" onclick="InfoWindow.show('Товар #1', 10044, '', '240 BYN', '', '', ['images/catalog/312.png'])">
                 </div>
-                <div class="image-container"><img src="images/img1.jpg"></div>
-                <div class="preview-after-img">
-                    <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '180.90 руб.', '200.90 руб.', '2017-03-30T00:00:00', ['images/img1.jpg', 'images/img2.jpg'])">
+                <div class="preview-item">
+                    <div class="image-container"><img src="images/catalog/312.png"></div>
                     <div class="preview-price"><p>340</p><p style="font-size: 16px; font-weight: 500">BYN</p></div>
+                    <input type="button" value="Описание" class="preview-button orderButton" onclick="InfoWindow.show('Товар #1', 10044, 'Длиннннннннннное описание.', '340 BYN', '', '', ['images/catalog/312.png'])">
                 </div>
             </div>
             <div class="aboutUs" id="about">
@@ -100,397 +100,641 @@
                 <div class="catalog-container">
                     <div class="catalog-title" id="children"><h1>Детские батуты</h1></div>
                     <div class="catalog-row-container">
-                        <div class="catalog-item">
+                        <div class="catalog-item four">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp060001.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>LECO 100см</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <h4><b>Leco 100см</b></h4>
+                                <p>Маленький детский батут Leco диаметром 100 см для вашей квартиры или дачи.</p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">99 BYN</p>
                                 <p class="current-price">69 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('LECO 100см')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('LECO 100см', 'гп060001', 'Описание.', '69 BYN', null, '', ['images/catalog/gp060001.jpg', 'images/catalog/gp060001_2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco 100см', 'гп060001')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco 100см', 'гп060001', '<p>Ножки легко вынимаются</p><p>Плоские детали удобны для хранения</p><p>Максимальная нагрузка 70 кг</p><p>Гарантия 2 года</p>', '69 BYN', null, '', ['images/catalog/gp060001.jpg', 'images/catalog/gp060001_2.jpg'], 5000)">
                             </div>
                         </div>
-                        <div class="catalog-item">
+                        <div class="catalog-item four">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp060002.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>LECO 120см</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <h4><b>Leco 120см</b></h4>
+                                <p>Маленький детский батут Leco диаметром 120 см для вашей квартиры или дачи.</p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none;">200 BYN</p>
                                 <p class="current-price">85 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('LECO 120см', 'гп060002')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('LECO 120см', 'гп060002', 'описание.', '85 BYN', '228 BYN', '', ['images/catalog/gp060002.jpg', 'images/catalog/gp060002_2.jpg'], 2000)">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco 120см', 'гп060002')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco 120см', 'гп060002', '<p>Ножки легко вынимаются</p><p>Плоские детали удобны для хранения</p><p>Максимальная нагрузка 70 кг</p><p>Гарантия 2 года</p>', '85 BYN', '228 BYN', '', ['images/catalog/gp060002.jpg', 'images/catalog/gp060002_2.jpg'], 5000)">
                             </div>
                         </div>
-                    </div>
-                    <div class="catalog-row-container">
-                        <div class="catalog-item">
+                        <div class="catalog-item four">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp060003.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>LECO 135см</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <h4><b>Leco 135см</b></h4>
+                                <p>Маленький детский батут Leco диаметром 135 см для вашей квартиры или дачи.</p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">200 BYN</p>
                                 <p class="current-price">89 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('LECO 135см')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('LECO 135см', 'гп060003', 'описание.', '89 BYN', '', '', ['images/catalog/gp060003.jpg', 'images/catalog/gp060003_2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco 135см', 'гп060003')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco 135см', 'гп060003', '<p>Ножки легко вынимаются</p><p>Плоские детали удобны для хранения</p><p>Максимальная нагрузка 70 кг</p><p>Гарантия 2 года</p>', '89 BYN', '', '', ['images/catalog/gp060003.jpg', 'images/catalog/gp060003_2.jpg'], 5000)">
                             </div>
                         </div>
-                        <div class="catalog-item">
+                        <div class="catalog-item four">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp060008.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
-                                <h4><b>LECO 160см</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <h4><b>Leco 160см</b></h4>
+                                <p>Маленький детский батут Leco диаметром 160 см для вашей квартиры или дачи.</p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">200 BYN</p>
                                 <p class="current-price">109 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('LECO 160см')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('LECO 160см', 'гп060008', 'описание.', '109 BYN', '', '', ['images/catalog/gp060008.jpg', 'images/catalog/gp060008_2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco 160см', 'гп060008')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco 160см', 'гп060008', '<p>Ножки легко вынимаются</p><p>Плоские детали удобны для хранения</p><p>Максимальная нагрузка 70 кг</p><p>Гарантия 2 года</p>', '109 BYN', '', '', ['images/catalog/gp060008.jpg', 'images/catalog/gp060008_2.jpg'], 5000)">
                             </div>
                         </div>
                     </div>
                     <div class="catalog-row-container">
-                        <div class="catalog-item">
+                        <div class="catalog-item four">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp6001.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
                                 <h4><b>Leco-IT Home 100см</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <p>Маленький детский батут Leco-IT Home диаметром 100 см для использования в помещениях для вашей квартиры.</p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">200 BYN</p>
                                 <p class="current-price">79 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 100см')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 100см', 'гп6001', 'Длиннннннннннное описание.', '79 BYN', '', '', ['images/catalog/gp6001.jpg', 'images/catalog/gp6001_2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 100см', 'гп6001')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 100см', 'гп6001', '<p>Конструкция сборно-разборная</p><p>Для хранения в плоском виде достаточно просто вытащить ножки</p><p>Высота от пола: 22см</p><p>Средний диаметр внутренней части батута: 78 см</p><p>Количество пружин: 24</p><p>Максимальная нагрузка: 70 кг</p><p>Вес батута: 5 кг</p><p>Гарантия 2 года</p>', '79 BYN', '', '', ['images/catalog/gp6001.jpg', 'images/catalog/gp6001_2.jpg'], 5000)">
                             </div>
                         </div>
-                        <div class="catalog-item">
+                        <div class="catalog-item four">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp6005.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
                                 <h4><b>Leco-IT Home 120см</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <p>Маленький детский батут Leco-IT Home диаметром 120 см для использования в помещениях для вашей квартиры.</p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">200 BYN</p>
                                 <p class="current-price">95 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 120см')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 120см', 'гп6005', 'Длиннннннннннное описание.', '95 BYN', '', '', ['images/catalog/gp6005.jpg', 'images/catalog/gp6005_2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 120см', 'гп6005')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 120см', 'гп6005', '<p>Конструкция сборно-разборная</p><p>Для хранения в плоском виде достаточно просто вытащить ножки</p><p>Высота от пола: 26см</p><p>Средний диаметр внутренней части батута: 96 см</p><p>Количество пружин: 24</p><p>Максимальная нагрузка: 70 кг</p><p>Вес батута: 6 кг</p><p>Гарантия 2 года</p>', '95 BYN', '', '', ['images/catalog/gp6005.jpg', 'images/catalog/gp6005_2.jpg'], 5000)">
                             </div>
                         </div>
-                    </div>
-                    <div class="catalog-row-container">
-                        <div class="catalog-item">
+                        <div class="catalog-item four">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp6010.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
                                 <h4><b>Leco-IT Home 135см</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <p>Маленький детский батут Leco-IT Home диаметром 135 см для использования в помещениях для вашей квартиры.</p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">200 BYN</p>
                                 <p class="current-price">109 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 135см')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 135см', 'гп6010', 'Длиннннннннннное описание.', '109 BYN', '', '', ['images/catalog/gp6010.jpg', 'images/catalog/gp6010_2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 135см', 'гп6010')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 135см', 'гп6010', '<p>Конструкция сборно-разборная</p><p>Для хранения в плоском виде достаточно просто вытащить ножки</p><p>Высота от пола: 29см</p><p>Средний диаметр внутренней части батута: 111 см</p><p>Количество пружин: 30/p><p>Максимальная нагрузка: 90 кг</p><p>Вес батута: 7 кг</p><p>Гарантия 2 года</p>', '109 BYN', '', '', ['images/catalog/gp6010.jpg', 'images/catalog/gp6010_2.jpg'], 5000)">
                             </div>
                         </div>
-                        <div class="catalog-item">
+                        <div class="catalog-item four">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp6015.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
                                 <h4><b>Leco-IT Home 160см</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <p>Маленький детский батут Leco-IT Home диаметром 160 см для использования в помещениях для вашей квартиры.</p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">200 BYN</p>
                                 <p class="current-price">129 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 160см')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 160см', 'гп6015', 'Длиннннннннннное описание.', '129 BYN', '', '', ['images/catalog/gp6015.jpg', 'images/catalog/gp6015_2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 160см', 'гп6015')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 160см', 'гп6015', '<p>Конструкция сборно-разборная</p><p>Для хранения в плоском виде достаточно просто вытащить ножки</p><p>Высота от пола: 31см</p><p>Средний диаметр внутренней части батута: 133 см</p><p>Количество пружин: 36</p><p>Максимальная нагрузка: 110 кг</p><p>Вес батута: 9 кг</p><p>Гарантия 2 года</p>', '129 BYN', '', '', ['images/catalog/gp6015.jpg', 'images/catalog/gp6015_2.jpg'], 5000)">
                             </div>
                         </div>
                     </div>
                     <div class="catalog-title" id="manege"><h1>Батуты-манежи</h1></div>
                     <div class="catalog-row-container">
-                        <div class="catalog-item">
+                        <div class="catalog-item three">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp060004.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
                                 <h4><b>Leco-IT Home 135см с сеткой</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <p>Маленький детский батут Leco-IT Home диаметром 135 см с сеткой для использования в помещениях для вашей квартиры.</p></p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">200 BYN</p>
                                 <p class="current-price">185 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 135см с сеткой')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 135см с сеткой', 'гп060004', 'Длиннннннннннное описание.', '185 BYN', '', '', ['images/catalog/gp060004.jpg', 'images/catalog/gp060004_2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 135см с сеткой', 'гп060004')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 135см с сеткой', 'гп060004', '<p>На батуте установлены мягкие пружины</p><p>Для детей от 1,5 до 5 лет</p><p>Высота от пола: 29 см</p><p>Средний диаметр внутренней части батута: 111 см</p><p>Количество пружин: 30</p><p>Высота сетки: 72 см</p><p>Максимальная нагрузка: 50 кг</p><p>Вес батута: 14 кг</p><p>Гарантия 2 года</p>', '185 BYN', '', '', ['images/catalog/gp060004.jpg', 'images/catalog/gp060004_2.jpg'], 5000)">
                             </div>
                         </div>
-                        <div class="catalog-item">
+                        <div class="catalog-item three">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp060005.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
                                 <h4><b>Leco-IT Home 160см с сеткой</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <p>Маленький детский батут Leco-IT Home диаметром 160 см с сеткой для использования в помещениях для вашей квартиры.</p></p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">200 BYN</p>
                                 <p class="current-price">220 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 160см с сеткой')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 160см с сеткой', 'гп060005', 'Длиннннннннннное описание.', '220 BYN', '', '', ['images/catalog/gp060005.jpg', 'images/catalog/gp060005_2.jpg', 'images/catalog/gp060005_3.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 160см с сеткой', 'гп060005')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 160см с сеткой', 'гп060005', '<p>На батуте установлены мягкие пружины</p><p>Для детей от 1,5 до 5 лет</p><p>Высота от пола: 31 см</p><p>Средний диаметр внутренней части батута: 120 см</p><p>Количество пружин: 36</p><p>Высота сетки: 72 см</p><p>Максимальная нагрузка: 50 кг</p><p>Вес батута: 15 кг</p><p>Гарантия 2 года</p>', '220 BYN', '', '', ['images/catalog/gp060005.jpg', 'images/catalog/gp060005_2.jpg', 'images/catalog/gp060005_3.jpg'], 5000)">
                             </div>
                         </div>
-                        <div class="catalog-item">
+                        <div class="catalog-item three">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp060006.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
                                 <h4><b>Leco-IT Home 180см с сеткой</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <p>Маленький детский батут Leco-IT Home диаметром 180 см с сеткой для использования в помещениях для вашей квартиры.</p></p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">200 BYN</p>
                                 <p class="current-price">260 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 180см с сеткой')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 180см с сеткой', 'гп060006', 'Длиннннннннннное описание.', '260 BYN', '', '', ['images/catalog/gp060006.jpg', 'images/catalog/gp060006_2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Home 180см с сеткой', 'гп060006')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Home 180см с сеткой', 'гп060006', '<p>На батуте установлены мягкие пружины</p><p>Для детей от 1,5 до 5 лет</p><p>Высота от пола: 35 см</p><p>Средний диаметр внутренней части батута: 153 см</p><p>Количество пружин: 42</p><p>Высота сетки: 72 см</p><p>Максимальная нагрузка: 50 кг</p><p>Вес батута: 16 кг</p><p>Гарантия 2 года</p>', '260 BYN', '', '', ['images/catalog/gp060006.jpg', 'images/catalog/gp060006_2.jpg'], 5000)">
                             </div>
                         </div>
                     </div>
                     <div class="catalog-row-container">
-                        <div class="catalog-item">
+                        <div class="catalog-item three">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp060115.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
                                 <h4><b>Leco Starter 210см с ограждением</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <p>Батут среднего размера Leco Starter диаметром 210 см с двухконтурным ограждением.</p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">200 BYN</p>
                                 <p class="current-price">365 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco Starter 210см с ограждением')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco Starter 210см с ограждением', 'гп060115', 'Длиннннннннннноеописание.', '365 BYN', '', '', ['images/catalog/gp060115.jpg', 'images/catalog/gp060115_2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco Starter 210см с ограждением', 'гп060115')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco Starter 210см с ограждением', 'гп060115', '<p>2-х контурная конструкция. Верхний периметр ограждения так же является силовым контуром</p><p>Максимальный вес пользователя: 120 кг</p><p>Вес батута: 50 кг</p><p>Гарантия 1 год</p>', '365 BYN', '', '', ['images/catalog/gp060115.jpg', 'images/catalog/gp060115_2.jpg'], 5000)">
                             </div>
                         </div>
-                        <div class="catalog-item">
+                        <div class="catalog-item three">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp060117.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
                                 <h4><b>Leco Starter 270см с ограждением</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <p>Батут среднего размера Leco Starter диаметром 270 см с двухконтурным ограждением.</p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">200 BYN</p>
                                 <p class="current-price">440 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco Starter 270см с ограждением')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco Starter 270см с ограждением', 'гп060117', 'Длиннннннннннноеописание.', '440 BYN', '', '', ['images/catalog/gp060117.jpg', 'images/catalog/gp060117_2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco Starter 270см с ограждением', 'гп060117')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco Starter 270см с ограждением', 'гп060117', '<p>2-х контурная конструкция. Верхний периметр ограждения так же является силовым контуром</p><p>Максимальный вес пользователя: 120 кг</p><p>Вес батута: 40 кг</p><p>Гарантия 1 год</p>', '440 BYN', '', '', ['images/catalog/gp060117.jpg', 'images/catalog/gp060117_2.jpg'], 5000)">
                             </div>
                         </div>
-                        <div class="catalog-item">
+                        <div class="catalog-item three">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp060119.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
                                 <h4><b>Leco Starter 310см с ограждением</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <p>Батут среднего размера Leco Starter диаметром 310 см с двухконтурным ограждением.</p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">200 BYN</p>
                                 <p class="current-price">510 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco Starter 310см с ограждением')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco Starter 310см с ограждением', 'гп060119', 'Длиннннннннннноеописание.', '510 BYN', '', '', ['images/catalog/gp060119.jpg', 'images/catalog/gp060119_2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco Starter 310см с ограждением', 'гп060119')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco Starter 310см с ограждением', 'гп060119', '<p>2-х контурная конструкция. Верхний периметр ограждения так же является силовым контуром</p><p>Максимальный вес пользователя: 110 кг</p><p>Вес батута: 34.5 кг</p><p>Гарантия 1 год</p>', '510 BYN', '', '', ['images/catalog/gp060119.jpg', 'images/catalog/gp060119_2.jpg'], 5000)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-row-container">
+                        <div class="catalog-item three">
+                            <div class="catalog-image-container">
+                                <img src="images/catalog/10150.jpeg" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>Sundays Acrobat 150см с сеткой</b></h4>
+                                <p>Маленький батут Sundays Acrobat диаметром 150 см с сеткой для использования как в помещениях, так и на улице.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">149 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Sundays Acrobat 150см с сеткой', '10150')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Sundays Acrobat 150см с сеткой', '10150', '<p><b>Диаметр внешний:</b> до 2 м</p><p><b>Диаметр внутренний:</b> 150 см</p><p><b>Максимальная нагрузка</b> 35 кг</p><p><b>Гарантийный срок</b> 1 год</p><p><b>Вес</b> 19 кг</p><p><b>Высота</b> 30 см</p><p><b>Материал рамы</b> сталь</p><p><b>Толщина металла</b> 1 мм</p><p><b>Тип пружины</b> резинки</p>', '149 BYN', '', '', ['images/catalog/10150.jpeg', 'images/catalog/10150-2.jpg'], 5000)">
+                            </div>
+                        </div>
+                        <div class="catalog-item three">
+                            <div class="catalog-image-container">
+                                <img src="images/catalog/10183.jpg" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>Sundays Acrobat 183см с сеткой</b></h4>
+                                <p>Маленький батут Sundays Acrobat диаметром 183 см с сеткой для использования как в помещениях, так и на улице.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">189 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Sundays Acrobat 183см с сеткой', '10183')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Sundays Acrobat 183см с сеткой', '10183', '<p><b>Диаметр внешний:</b> до 2 м</p><p><b>Диаметр внутренний:</b> 183 см</p><p><b>Высота с защитной сеткой</b> 215 см</p><p><b>Максимальная нагрузка</b> 60 кг</p><p><b>Гарантийный срок</b> 1 год</p><p><b>Количество пружин</b> 47 шт</p><p><b>Высота</b> 55 см</p><p><b>Материал рамы</b> сталь</p><p><b>Толщина металла</b> 1 мм</p>', '189 BYN', '', '', ['images/catalog/10183.jpg', 'images/catalog/10183-2.jpg', 'images/catalog/10183-3.jpg', 'images/catalog/10183-4.jpeg'], 5000)">
+                            </div>
+                        </div>
+                        <div class="catalog-item three">
+                            <div class="catalog-image-container">
+                                <img src="images/catalog/10183.jpg" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>Sundays Acrobat 252см с сеткой</b></h4>
+                                <p>Батут среднего размера Sundays Acrobat диаметром 252 см с сеткой для использования как в помещениях, так и на улице.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">269 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Sundays Acrobat 252см с сеткой', '10252')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Sundays Acrobat 252см с сеткой', '10252', '<p><b>Диаметр внешний:</b> 2 - 4 м</p><p><b>Диаметр внутренний:</b> 252 см</p><p><b>Высота с защитной сеткой</b> 230 см</p><p><b>Максимальная нагрузка</b> 100 кг</p><p><b>Гарантийный срок</b> 1 год</p><p><b>Вес</b> 42 кг</p><p><b>Количество пружин</b> 42 шт</p><p><b>Высота</b> 65 см</p><p><b>Материал рамы</b> сталь</p><p><b>Толщина металла</b> 1 мм</p>', '269 BYN', '', '', ['images/catalog/10183.jpg', 'images/catalog/10183-2.jpg', 'images/catalog/10183-3.jpg', 'images/catalog/10183-4.jpeg', 'images/catalog/boyandgirl.jpg'], 5000)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-row-container">
+                        <div class="catalog-item three">
+                            <div class="catalog-image-container">
+                                <img src="images/catalog/mod2.jpg" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>Sundays MOD2 252см с сеткой</b></h4>
+                                <p>Батут среднего размера Sundays MOD2 диаметром 252 см с сеткой для использования как в помещениях, так и на улице.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">269 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Sundays MOD2 252см с сеткой', '11252')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Sundays MOD2 252см с сеткой', '11252', '<p><b>Диаметр внешний:</b> 2 - 4 м</p><p><b>Диаметр внутренний:</b> 252 см</p><p><b>Высота с защитной сеткой</b> 230 см</p><p><b>Максимальная нагрузка</b> 100 кг</p><p><b>Гарантийный срок</b> 1 год</p><p><b>Количество пружин</b> 42 шт</p><p><b>Высота</b> 65 см</p><p><b>Материал рамы</b> сталь</p><p><b>Толщина металла</b> 1.5 мм</p>', '269 BYN', '', '', ['images/catalog/mod2.jpg', 'images/catalog/10183-3.jpg', 'images/catalog/10183-4.jpeg', 'images/catalog/boyandgirl.jpg'], 5000)">
+                            </div>
+                        </div>
+                        <div class="catalog-item three">
+                            <div class="catalog-image-container">
+                                <img src="images/catalog/mod1.jpg" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>Sundays Garden4you MOD1 252см с сеткой</b></h4>
+                                <p>Батут среднего размера Sundays MOD1 Garden4you диаметром 252 см с сеткой для использования как в помещениях, так и на улице.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">299 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Sundays Garden4you MOD1 252см с сеткой', '13252')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Sundays Garden4you MOD1 252см с сеткой', '13252', '<p><b>Диаметр внутренний:</b> 244 см</p><p><b>Высота с защитной сеткой</b> 215 см</p><p><b>Гарантийный срок</b> 1 год</p><p><b>Количество пружин</b> 47 шт</p><p><b>Высота</b> 55 см</p><p><b>Материал рамы</b> сталь</p><p><b>Толщина металла</b> 1.5 мм</p>', '279 BYN', '', '', ['images/catalog/mod1.jpg', 'images/catalog/10183-4.jpeg'], 5000)">
+                            </div>
+                        </div>
+                        <div class="catalog-item three">
+                            <div class="catalog-image-container">
+                                <img src="images/catalog/10183.jpg" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>Sundays Acrobat 312см с сеткой</b></h4>
+                                <p>Батут среднего размера Sundays Acrobat диаметром 312 см с сеткой для использования как в помещениях, так и на улице.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">365 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Sundays Acrobat 312см с сеткой', '10312')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Sundays Acrobat 312см с сеткой', '10312', '<p><b>Диаметр внешний:</b> 2 - 4 м</p><p><b>Диаметр внутренний:</b> 312 см</p><b>Высота с защитной сеткой</b> 235 см</p><p><b>Максимальная нагрузка</b> 150 кг</p><p><b>Гарантийный срок</b> 1 год</p><p><b>Вес</b> 42 кг</p><p><b>Высота</b> 70 см</p><p><b>Количество пружин</b> 60 шт</p><p><b>Материал рамы</b> сталь</p><p><b>Толщина металла</b> 1 мм</p>', '365 BYN', '', '', ['images/catalog/10183.jpg', 'images/catalog/10183-2.jpg', 'images/catalog/10183-3.jpg', 'images/catalog/10183-4.jpeg'], 5000)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-row-container">
+                        <div class="catalog-item three">
+                            <div class="catalog-image-container">
+                                <img src="images/catalog/champion.jpg" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>Sundays Champion 252см с сеткой</b></h4>
+                                <p>Батут среднего размера Sundays Acrobat диаметром 252 см с сеткой для использования как в помещениях, так и на улице.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">299 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Sundays Champion 252см с сеткой', '14252')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Sundays Champion 252см с сеткой', '14252', '<p><b>Диаметр внешний:</b> 2 - 4 м</p><p><b>Диаметр внутренний:</b> 252 см</p><b>Высота с защитной сеткой</b> 210 см</p><p><b>Максимальная нагрузка</b> 100 кг</p><p><b>Гарантийный срок</b> 1 год</p><p><b>Вес</b> 40 кг</p><p><b>Высота</b> 55 см</p><p><b>Количество пружин</b> 48 шт</p><p><b>Материал рамы</b> сталь</p><p><b>Толщина металла</b> 1.5 мм</p><p>', '299 BYN', '', '', ['images/catalog/champion.jpg', 'images/catalog/champion-2.jpg', 'images/catalog/champion-3.jpg', 'images/catalog/champion-4.jpg'], 5000)">
+                            </div>
+                        </div>
+                        <div class="catalog-item three">
+                            <div class="catalog-image-container">
+                                <img src="images/catalog/champion.jpg" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>Sundays Champion 312см с сеткой</b></h4>
+                                <p>Батут среднего размера Sundays Acrobat диаметром 312 см с сеткой для использования как в помещениях, так и на улице.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">399 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Sundays Champion 312см с сеткой', '14312')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Sundays Champion 312см с сеткой', '14312', '<p><b>Диаметр внешний:</b> 2 - 4 м</p><p><b>Диаметр внутренний:</b> 312 см</p><b>Высота с защитной сеткой</b> 254 см</p><p><b>Максимальная нагрузка</b> 150 кг</p><p><b>Гарантийный срок</b> 1 год</p><p><b>Вес</b> 52 кг</p><p><b>Высота</b> 74 см</p><p><b>Количество пружин</b> 64 шт</p><p><b>Материал рамы</b> сталь</p><p><b>Толщина металла</b> 1.5 мм</p>', '399 BYN', '', '', ['images/catalog/champion.jpg', 'images/catalog/champion-2.jpg', 'images/catalog/champion-3.jpg', 'images/catalog/champion-4.jpg'], 5000)">
+                            </div>
+                        </div>
+                        <div class="catalog-item three">
+                            <div class="catalog-image-container">
+                                <img src="images/catalog/premium.jpg" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>Sundays Champion Premium 312см с сеткой  и летсницей</b></h4>
+                                <p>Батут среднего размера Sundays Acrobat диаметром 312 см с сеткой для использования как в помещениях, так и на улице.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">499 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Sundays Champion Premium 312см с сеткой  и летсницей', '15312')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Sundays Champion Premium 312см с сеткой  и летсницей', '15312', '<p><b>Диаметр внешний:</b> 2 - 4 м</p><p><b>Диаметр внутренний:</b> 312 см</p><b>Высота с защитной сеткой</b> 254 см</p><p><b>Максимальная нагрузка</b> 150 кг</p><p><b>Гарантийный срок</b> 1 год</p><p><b>Вес</b> 50 кг</p><p><b>Высота</b> 74 см</p><p><b>Количество пружин</b> 64 шт</p><p><b>Материал рамы</b> сталь</p><p><b>Толщина металла</b> 1.5 мм</p>', '499 BYN', '', '', ['images/catalog/premium.jpg', 'images/catalog/premium-2.jpg', 'images/catalog/premium-3.jpg', 'images/catalog/premium-4.jpg', 'images/catalog/premium-5.jpg'], 5000)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-row-container">
+                        <div class="catalog-item three">
+                            <div class="catalog-image-container">
+                                <img src="images/catalog/acrobatd.jpg" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>Sundays Acrobat-D 374см с сеткой</b></h4>
+                                <p>Батут среднего размера Sundays Acrobat диаметром 374 см с сеткой для использования как в помещениях, так и на улице.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">629 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Sundays Acrobat-D 374см с сеткой', '16374')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Sundays Acrobat-D 374см с сеткой', '16374', '<p><b>Диаметр внешний:</b> 2 - 4 м</p><p><b>Диаметр внутренний:</b> 374 см</p><b>Высота с защитной сеткой</b> 253 см</p><p><b>Максимальная нагрузка</b> 180 кг</p><p><b>Гарантийный срок</b> 1 год</p><p><b>Вес</b> 53 кг</p><p><b>Высота</b> 88 см</p><p><b>Количество пружин</b> 64 шт</p><p><b>Материал рамы</b> сталь</p><p><b>Толщина металла</b> 1 мм</p>', '629 BYN', '', '', ['images/catalog/acrobatd.jpg', 'images/catalog/10183-3.jpg', 'images/catalog/10183-4.jpeg'], 5000)">
+                            </div>
+                        </div>
+                        <div class="catalog-item three">
+                            <div class="catalog-image-container">
+                                <img src="images/catalog/acrobatd.jpg" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>Sundays Acrobat 435см с сеткой</b></h4>
+                                <p>Большой батут Sundays Acrobat диаметром 435 см с сеткой. Идеально подходити для дачи или загородного дома.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">510 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Sundays Acrobat 435см с сеткой', '10435')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Sundays Acrobat 435см с сеткой', '10435', '<p><b>Диаметр внешний:</b> более 4 м</p><p><b>Диаметр внутренний:</b> 435 см</p><b>Высота с защитной сеткой</b> 260 см</p><p><b>Максимальная нагрузка</b> 180 кг</p><p><b>Гарантийный срок</b> 1 год</p><p><b>Вес</b> 69 кг</p><p><b>Высота</b> 88 см</p><p><b>Количество пружин</b> 88 шт</p><p><b>Материал рамы</b> сталь</p><p><b>Толщина металла</b> 1 мм</p>', '510 BYN', '', '', ['images/catalog/acrobatd.jpg', 'images/catalog/10183-3.jpg', 'images/catalog/10183-4.jpeg'], 5000)">
+                            </div>
+                        </div>
+                        <div class="catalog-item three">
+                            <div class="catalog-image-container">
+                                <img src="images/catalog/acrobatd.jpg" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>Sundays MOD2 465см с сеткой</b></h4>
+                                <p>Большой батут Sundays Acrobat диаметром 465 см с сеткой. Идеально подходити для дачи или загородного дома.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">529 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Sundays MOD2 465см с сеткой', '11465')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Sundays MOD2 465см с сеткой', '11465', '<p><b>Диаметр внешний:</b> более 4 м</p><p><b>Диаметр внутренний:</b> 465 см</p><b>Высота с защитной сеткой</b> 240 см</p><p><b>Максимальная нагрузка</b> 180 кг</p><p><b>Гарантийный срок</b> 1 год</p><p><b>Вес</b> 75 кг</p><p><b>Высота</b> 88 см</p><p><b>Количество пружин</b> 96 шт</p><p><b>Материал рамы</b> сталь</p>', '529 BYN', '', '', ['images/catalog/acrobatd.jpg', 'images/catalog/10183-3.jpg', 'images/catalog/10183-4.jpeg'], 5000)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-row-container">
+                        <div class="catalog-item two">
+                            <div class="catalog-image-container">
+                                <img src="images/catalog/acrobatd.jpg" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>Sundays Acrobat-D 465см с сеткой</b></h4>
+                                <p>Большой батут Sundays Acrobat диаметром 465 см с сеткой. Идеально подходити для дачи или загородного дома.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">590 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Sundays Acrobat-D 465см с сеткой', '16465')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Sundays Acrobat-D 465см с сеткой', '16465', '<p><b>Диаметр внешний:</b> более 4 м</p><p><b>Диаметр внутренний:</b> 465 см</p><b>Высота с защитной сеткой</b> 240 см</p><p><b>Максимальная нагрузка</b> 180 кг</p><p><b>Гарантийный срок</b> 1 год</p><p><b>Вес</b> 75 кг</p><p><b>Высота</b> 88 см</p><p><b>Количество пружин</b> 96 шт</p><p><b>Материал рамы</b> сталь</p><p><b>Толщина металла</b> 1 мм</p>', '590 BYN', '', '', ['images/catalog/acrobatd.jpg', 'images/catalog/10183-3.jpg', 'images/catalog/10183-4.jpeg'], 5000)">
+                            </div>
+                        </div>
+                        <div class="catalog-item two">
+                            <div class="catalog-image-container">
+                                <img src="images/catalog/acrobat490.jpg" class="catalog-item-image">
+                            </div>
+                            <div class="catalog-item-text">
+                                <h4><b>Sundays Acrobat 490см с сеткой</b></h4>
+                                <p>Большой батут Sundays Acrobat диаметром 490 см с сеткой. Идеально подходити для дачи или загородного дома.</p>
+                            </div>
+                            <div class="catalog-price-container">
+                                <p class="old-price" style="display: none">200 BYN</p>
+                                <p class="current-price">629 BYN</p>
+                            </div>
+                            <div class="buttons-container">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Sundays Acrobat 490см с сеткой', '10490')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Sundays Acrobat 490см с сеткой', '10490', '<p><b>Диаметр внешний:</b> более 4 м</p><p><b>Диаметр внутренний:</b> 490 см</p><b>Высота с защитной сеткой</b> 260 см</p><p><b>Максимальная нагрузка</b> 180 кг</p><p><b>Гарантийный срок</b> 1 год</p><p><b>Вес</b> 86 кг</p><p><b>Высота</b> 96 см</p><p><b>Количество пружин</b> 100 шт</p><p><b>Материал рамы</b> сталь</p><p><b>Толщина металла</b> 1 мм</p>', '629 BYN', '', '', ['images/catalog/acrobat490.jpg', 'images/catalog/acrobat490-2.jpg', 'images/catalog/acrobat490-3.jpg', 'images/catalog/10183-3.jpg'], 5000)">
                             </div>
                         </div>
                     </div>
                     <div class="catalog-title" id="street"><h1>Для улицы</h1></div>
                     <div class="catalog-row-container">
-                        <div class="catalog-item">
+                        <div class="catalog-item three">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp060022.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
                                 <h4><b>Leco-IT Outdoor 230см с ограждением</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <p>Батут средних размеров Leco-IT Outdoor с ограждением диаметром 230 см для использования на улице. Идельно подходит для дачи.</p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">200 BYN</p>
                                 <p class="current-price">545 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Outdoor 230см с ограждением')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Outdoor 230см с ограждением', 'гп060022', 'Длиннннннннннноеописание.', '545 BYN', '', '', ['images/catalog/gp060022.jpg', 'images/catalog/gp060022_2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Outdoor 230см с ограждением', 'гп060022')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Outdoor 230см с ограждением', 'гп060022', '<p>Каркасная 3-х контурная конструкция обеспечивающая очень высокую жесткость контура</p><p>Прочный чехол закрывающий пружины</p><p>Батут можно закрепить на грунте</p><p>Диаметр труб: 38 мм</p><p>Максимальная нагрузка не ограничена, при использовании по назначения</p><p>Вес батута: 45 кг</p><p>Гарантия 2 года</p>', '545 BYN', '', '', ['images/catalog/gp060022.jpg', 'images/catalog/gp060022_2.jpg'], 5000)">
                             </div>
                         </div>
-                        <div class="catalog-item">
+                        <div class="catalog-item three">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp060024.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
                                 <h4><b>Leco-IT Outdoor 270см с ограждением</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <p>Батут средних размеров Leco-IT Outdoor с ограждением диаметром 270 см для использования на улице. Идельно подходит для дачи.</p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">200 BYN</p>
                                 <p class="current-price">580 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Outdoor 270см с ограждением')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Outdoor 270см с ограждением', 'гп060024', 'Длиннннннннннноеописание.', '580 BYN', '', '', ['images/catalog/gp060024.jpg', 'images/catalog/gp060024_2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Outdoor 270см с ограждением', 'гп060024')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Outdoor 270см с ограждением', 'гп060024', '<p>Каркасная 3-х контурная конструкция обеспечивающая очень высокую жесткость контура</p><p>Прочный чехол закрывающий пружины</p><p>Батут можно закрепить на грунте</p><p>Диаметр труб: 38 мм</p><p>Максимальная нагрузка не ограничена, при использовании по назначения</p><p>Вес батута: 51 кг</p><p>Гарантия 2 года</p>', '580 BYN', '', '', ['images/catalog/gp060024.jpg', 'images/catalog/gp060024_2.jpg'], 5000)">
                             </div>
                         </div>
-                        <div class="catalog-item">
+                        <div class="catalog-item three">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp060026.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
                                 <h4><b>Leco-IT Outdoor 310см с ограждением</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <p>Батут средних размеров Leco-IT Outdoor с ограждением диаметром 310 см для использования на улице. Идельно подходит для дачи.</p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">200 BYN</p>
                                 <p class="current-price">620 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Outdoor 310см с ограждением')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Outdoor 310см с ограждением', 'гп060026', 'Длиннннннннннноеописание.', '620 BYN', '', '', ['images/catalog/gp060026.jpg', 'images/catalog/gp060026_2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Outdoor 310см с ограждением', 'гп060026')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Outdoor 310см с ограждением', 'гп060026', '<p>Каркасная 3-х контурная конструкция обеспечивающая очень высокую жесткость контура</p><p>Прочный чехол закрывающий пружины</p><p>Батут можно закрепить на грунте</p><p>Диаметр труб: 38 мм</p><p>Максимальная нагрузка не ограничена, при использовании по назначения</p><p>Вес батута: 61 кг</p><p>Гарантия 2 года</p>', '620 BYN', '', '', ['images/catalog/gp060026.jpg', 'images/catalog/gp060026_2.jpg'], 5000)">
                             </div>
                         </div>
                     </div>
                     <div class="catalog-row-container">
-                        <div class="catalog-item">
+                        <div class="catalog-item three">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp060040.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
                                 <h4><b>Leco-IT Street 370см с ограждением</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <p>Большой батут Leco-IT Street диаметром 370 см с ограждением предназначенный для улицы. Идеально впишеться на вашей даче или в загародном доме.</p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">200 BYN</p>
                                 <p class="current-price">730 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Street 370см с ограждением')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Street 370см с ограждением', 'гп060040', 'Длиннннннннннноеописание.', '730 BYN', '', '', ['images/catalog/gp060040.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Street 370см с ограждением', 'гп060040')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Street 370см с ограждением', 'гп060040', '<p>Особо жесткая 3-х контурная каркасная конструкция</p><p>Диаметр труб: 48 мм</p><p>Батут подходит для использования в местах общественного отдыха</p><p>Трубы покрыты специальной порошковой краской с очень высокой стойкостью к ультрафиолету</p><p>Нагрузка не ограничена при использовании по назначению</p><p>Вес батута: 98 кг</p><p>Гарантия 3 года</p>', '730 BYN', '', '', ['images/catalog/gp060040.jpg','images/catalog/gp060040_2.jpg'], 5000)">
                             </div>
                         </div>
-                        <div class="catalog-item">
+                        <div class="catalog-item three">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp060042.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
                                 <h4><b>Leco-IT Street 420см с ограждением</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <p>Большой батут Leco-IT Street диаметром 420 см с ограждением предназначенный для улицы. Идеально впишеться на вашей даче или в загародном доме.</p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">200 BYN</p>
                                 <p class="current-price">860 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Street 420см с ограждением')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Street 420см с ограждением', 'гп060042', 'Длиннннннннннноеописание.', '860 BYN', '', '', ['images/catalog/gp060042.jpg', 'images/catalog/gp060042_2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Street 420см с ограждением', 'гп060042')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Street 420см с ограждением', 'гп060042', '<p>Особо жесткая 3-х контурная каркасная конструкция</p><p>Диаметр труб: 48 мм</p><p>Батут подходит для использования в местах общественного отдыха</p><p>Трубы покрыты специальной порошковой краской с очень высокой стойкостью к ультрафиолету</p><p>Нагрузка не ограничена при использовании по назначению</p><p>Вес батута: 114 кг</p><p>Гарантия 3 года</p>', '860 BYN', '', '', ['images/catalog/gp060042.jpg', 'images/catalog/gp060042_2.jpg'], 5000)">
                             </div>
                         </div>
-                        <div class="catalog-item">
+                        <div class="catalog-item three">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp060044.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
                                 <h4><b>Leco-IT Street 470см с ограждением</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <p>Большой батут Leco-IT Street диаметром 470 см с ограждением предназначенный для улицы. Идеально впишеться на вашей даче или в загародном доме.</p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">200 BYN</p>
-                                <p class="current-price">990 BYN</p>
+                                <p class="current-price">1155 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Street 470см с ограждением')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Street 470см с ограждением', 'гп060044', 'Длиннннннннннноеописание.', '990 BYN', '', '', ['images/catalog/gp060044.jpg', 'images/catalog/gp060044_2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Street 470см с ограждением', 'гп060044')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Street 470см с ограждением', 'гп060044', '<p>Особо жесткая 3-х контурная каркасная конструкция</p><p>Диаметр труб: 48 мм</p><p>Батут подходит для использования в местах общественного отдыха</p><p>Трубы покрыты специальной порошковой краской с очень высокой стойкостью к ультрафиолету</p><p>Нагрузка не ограничена при использовании по назначению</p><p>Вес батута: 126 кг</p><p>Гарантия 3 года</p>', '1155 BYN', '', '', ['images/catalog/gp060044.jpg', 'images/catalog/gp060044_2.jpg'], 5000)">
                             </div>
                         </div>
                     </div>
                     <div class="catalog-title" id="fitness"><h1>Для фитнеса</h1></div>
                     <div class="catalog-row-container">
-                        <div class="catalog-item">
+                        <div class="catalog-item two">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp060254.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
                                 <h4><b>Leco-IT Fit 135см</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <p>Компактный батут для фитнеса Leco-IT Fit диаметром 135 см благодаря специальному поручню отлично подходит для занятия фитнесом.</p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">200 BYN</p>
                                 <p class="current-price">260 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Fit 135см')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Fit 135см', 'гп060254', 'Длиннннннннннноеописание.', '260 BYN', '', '', ['images/catalog/gp060254.jpg', 'images/catalog/gp060254_2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Fit 135см', 'гп060254')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Fit 135см', 'гп060254', '<p>Новый тренажер для фитнеса</p><p>Вместо пружин применен резиновый жгут, это делает батут более эластичным</p><p>Допустимая нагрузка до 100 кг</p><p>Вес батута: 15 кг</p><p>Гарантия 2 года</p>', '260 BYN', '', '', ['images/catalog/gp060254.jpg', 'images/catalog/gp060254_2.jpg'], 5000)">
                             </div>
                         </div>
-                        <div class="catalog-item">
+                        <div class="catalog-item two">
                             <div class="catalog-image-container">
                                 <img src="images/catalog/gp060256.jpg" class="catalog-item-image">
                             </div>
                             <div class="catalog-item-text">
                                 <h4><b>Leco-IT Fit 160см</b></h4>
-                                <p>Обычный ничем не выделяющийся батут для ваших детей, чтобы они прыгали и радовались.</p>
+                                <p>Компактный батут для фитнеса Leco-IT Fit диаметром 160 см благодаря специальному поручню отлично подходит для занятия фитнесом.</p>
                             </div>
                             <div class="catalog-price-container">
                                 <p class="old-price" style="display: none">200 BYN</p>
                                 <p class="current-price">330 BYN</p>
                             </div>
                             <div class="buttons-container">
-                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Fit 160см')">
-                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Fit 160см', 'гп060256', 'Длиннннннннннноеописание.', '330 BYN', '', '', ['images/catalog/gp060256.jpg', 'images/catalog/gp060256_2.jpg'])">
+                                <input type="button" value="Заказать" class="Button showButton" onclick="OrderWindow.show('Leco-IT Fit 160см', 'гп060256')">
+                                <input type="button" value="Описание" class="Button orderButton" onclick="InfoWindow.show('Leco-IT Fit 160см', 'гп060256', '<p>Новый тренажер для фитнеса</p><p>Вместо пружин применен резиновый жгут, это делает батут более эластичным</p><p>Допустимая нагрузка до 100 кг</p><p>Вес батута: 16.5 кг</p><p>Гарантия 2 года</p>', '330 BYN', '', '', ['images/catalog/gp060256.jpg', 'images/catalog/gp060256_2.jpg'], 5000)">
                             </div>
                         </div>
                     </div>
@@ -499,23 +743,23 @@
             <div class="advantages">
                 <div class="advantages-container">
                     <div class="advantages-title"><h1>Наши преимущества</h1></div>
-                    <div class="aboutUs-container-out">
-                        <div class="aboutUs-items-container">
-                            <div class="aboutUs-item">
-                                    <img src="images/timel.png" class="aboutUs-image">
-                                <div class="aboutUs-text">
+                    <div class="advantages-container-out">
+                        <div class="advantages-items-container">
+                            <div class="advantages-item">
+                                <img src="images/advantages/clients.png" class="advantages-image">
+                                <div class="advantages-text">
                                     <p>Более 1 000 благодарных покупателей</p>
                                 </div>
                             </div>
-                            <div class="aboutUs-item">
-                                <img src="images/timel.png" class="aboutUs-image">
-                                <div class="aboutUs-text">
+                            <div class="advantages-item">
+                                <img src="images/advantages/service.png" class="advantages-image">
+                                <div class="advantages-text">
                                     <p>Качественный пост-продажный сервис</p>
                                 </div>
                             </div>
-                            <div class="aboutUs-item">
-                                <img src="images/timel.png" class="aboutUs-image">
-                                <div class="aboutUs-text">
+                            <div class="advantages-item">
+                                <img src="images/advantages/quality.png" class="advantages-image">
+                                <div class="advantages-text">
                                     <p>Безопасность обеспеченная качественными материалами</p>
                                 </div>
                             </div>
@@ -529,28 +773,28 @@
                     <div class="howItWorks-container-out">
                         <div class="howItWorks-items-container">
                             <div class="howItWorks-item">
-                                <img src="images/howItWorks/order-01.png" class="howItWorks-image">
+                                <img src="images/howItWorks/order-02.png" class="howItWorks-image">
                                 <div class="howItWorks-text">
                                     <p>Вы оставляете заявку на сайте или по телефона</p>
                                 </div>
                             </div>
-                            <i class="material-icons arrow" style="font-size: 60px">arrow_forward</i>
+                            <i class="material-icons arrow" style="font-size: 80px">arrow_forward</i>
                             <div class="howItWorks-item">
-                                <img src="images/howItWorks/manager-01.png" class="howItWorks-image">
+                                <img src="images/howItWorks/manager-02.png" class="howItWorks-image">
                                 <div class="howItWorks-text">
                                     <p>Наш менеджер связывается с Вами и консультирует по всем вопросам</p>
                                 </div>
                             </div>
-                            <i class="material-icons arrow" style="font-size: 60px">arrow_forward</i>
+                            <i class="material-icons arrow" style="font-size: 80px">arrow_forward</i>
                             <div class="howItWorks-item">
-                                <img src="images/howItWorks/delivery-01.png" class="howItWorks-image">
+                                <img src="images/howItWorks/delivery-02.png" class="howItWorks-image">
                                 <div class="howItWorks-text">
                                     <p>Вам в кратчайшие сроки доставляется товар</p>
                                 </div>
                             </div>
-                            <i class="material-icons arrow" style="font-size: 60px">arrow_forward</i>
+                            <i class="material-icons arrow" style="font-size: 80px">arrow_forward</i>
                             <div class="howItWorks-item">
-                                <img src="images/howItWorks/happy-01.png" class="howItWorks-image">
+                                <img src="images/howItWorks/happy-02.png" class="howItWorks-image">
                                 <div class="howItWorks-text">
                                     <p>Ваш ребенок и Вы здоровы и получаете массу положительных эмоций</p>
                                 </div>
@@ -567,27 +811,15 @@
                     <div class="review-container-row">
                         <div class="review-container">
                             <div class="review-image-container">
-                                <img src="images/timel.png" class="review-image">
+                                <img src="images/reviews/man-1.png" class="review-image">
                             </div>
                             <div class="review-text-container">
                                 <div class="review-author">
                                     <p>Данна Борисова</p>
                                 </div>
                                 <div class="review-text">
-                                    <p>Крутые, крутые, очень крутые батуты, прыгать на них одно удовольствие. Так понравились эти батуты, что купила сразу 5 шутк. Всем очень сильно советую!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-container">
-                            <div class="review-image-container">
-                                <img src="images/timel.png" class="review-image">
-                            </div>
-                            <div class="review-text-container">
-                                <div class="review-author">
-                                    <p>Данна Борисова</p>
-                                </div>
-                                <div class="review-text">
-                                    <p>Крутые, крутые, очень крутые батуты, прыгать на них одно удовольствие. Так понравились эти батуты, что купила сразу 5 шутк. Всем очень сильно советую!</p>
+                                    <p>Отличный магазин! Быстро по времени приняли заказ, даже в праздничный день! В тот же день сделали доставку и это приятно удивило! Приятно удивил и курьер, который доставил и приятно все рассказал о товаре!</p>
+                                    <p>Перезвонили сразу же, привезли в тот же день, быстро и без проблем. Курьер вежлив, товар новый, запакованный, в идеальном состоянии. Доставка бесплатная.</p>
                                 </div>
                             </div>
                         </div>
@@ -595,27 +827,47 @@
                     <div class="review-container-row">
                         <div class="review-container">
                             <div class="review-image-container">
-                                <img src="images/timel.png" class="review-image">
+                                <img src="images/reviews/woman-2.png" class="review-image">
                             </div>
                             <div class="review-text-container">
                                 <div class="review-author">
                                     <p>Данна Борисова</p>
                                 </div>
                                 <div class="review-text">
-                                    <p>Крутые, крутые, очень крутые батуты, прыгать на них одно удовольствие. Так понравились эти батуты, что купила сразу 5 шутк. Всем очень сильно советую!</p>
+                                    <p>Заказывала в данном магазине в первый раз, все на высоте. Заказала Батут Funfit 312см с защитной сеткой и лестницей со мной связался молодой человек для уточнение информации, доставку оформили в тот же день и бесплатно. Дети в восторге, с батута не согнать, море позитива у детей и у нас. Спасибо магазину!</p>
+                                    <p>Очень быстро перезвонили. Привезли в оговоренное время. Курьер вежливый, адекватный, спокойно подождал пока проверяли покупку. Цена в магазине была одной из самых выгодных.</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="review-container-row">
                         <div class="review-container">
                             <div class="review-image-container">
-                                <img src="images/timel.png" class="review-image">
+                                <img src="images/reviews/man-2.png" class="review-image">
                             </div>
                             <div class="review-text-container">
                                 <div class="review-author">
                                     <p>Данна Борисова</p>
                                 </div>
                                 <div class="review-text">
-                                    <p>Крутые, крутые, очень крутые батуты, прыгать на них одно удовольствие. Так понравились эти батуты, что купила сразу 5 шутк. Всем очень сильно советую!</p>
+                                    <p>Быстро среагировали на заказ, любезно предоставили всю информацию, вплоть до страны-производителя. Доставили через несколько часов в тот же день и бесплатно по Минску. Заказывал батут Leco-IT Street с ограждением диам. 370 см. Батут классный с тройным контуром. Ничего не шатается все четко и добротно. Товар и магазин на высоте.</p>
+                                    <p>Качество обслуживания на высшем уровне, вежливые сотрудники. Доставили очень быстро, в надлежащем состоянии. Остался очень доволен, всем советую.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-container-row">
+                        <div class="review-container">
+                            <div class="review-image-container">
+                                <img src="images/reviews/woman-1.png" class="review-image">
+                            </div>
+                            <div class="review-text-container">
+                                <div class="review-author">
+                                    <p>Данна Борисова</p>
+                                </div>
+                                <div class="review-text">
+                                    <p>Заказ сделала в выходной день, поэтому не надеялась получить его в понедельник, но доставили утром на следующий день оператор позвонил и в 16 часов заказ был уже у меня. Доставка осуществлялась в Пинск. Очень оперативно, спасибо!</p>
+                                    <p>Спасибо батуты.бел: помогли подобрать нужную модель батута. Доставили на следующий день. Батутом довольны, ребенок в восторге!</p>
                                 </div>
                             </div>
                         </div>
@@ -627,15 +879,53 @@
                     <h1>Наши контакты</h1>
                 </div>
                 <div class="contacts-container">
-
+                    <div class="contacts-image">
+                        <img src="images/manager.png">
+                    </div>
+                    <div class="contacts-text-container">
+                        <div class="contacts-text-title">
+                            <h1>Свяжитесь с нами!</h1>
+                        </div>
+                        <div class="contacts-text">
+                            <div class="contacts-text-start">
+                                <p><b>Velcom:</b></p>
+                                <p><b>МТС:</b><br></p>
+                                <p><b>Viber:</b><br></p>
+                                <p><b>E-mail:</b><br></p>
+                            </div>
+                            <div>
+                                <p>+375 (29) 661-95-61</p>
+                                <p>+375 (33) 661-95-61</p>
+                                <p>+375 (29) 661-95-61</p>
+                                <p>batutbel@gmail.com </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <footer>
-        <div class="footer-container"></div>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/header/logo.png">
+            </div>
+            <div class="footer-buttons">
+                <a href="#about">О нас</a><br>
+                <a href="#about">Детские батуты</a><br>
+                <a href="#about">Батуты-манежи</a><br>
+                <a href="#about">Батуты для улицы</a><br>
+                <a href="#about">Батуты для фитнеса</a>
+            </div>
+            <div class="footer-info">
+                <p>ООО Беленус, г. Минск</p>
+                <p>ул.Алибегова 13/1-54,</p>
+                <p>р/с 3012003768009 ЗАО «БСБ-банк»</p>
+                <p>г. Минск, пр-т Г.Звезда, 47код 175</p>
+                <p>УНП 191181583</p>
+            </div>
+        </div>
     </footer>
-
     <button onclick="goTop()" id="topBtn" title="Вверх">Вверх</button>
 
     <div id="messageBackground" class="modal-background order-background">
@@ -731,5 +1021,6 @@
         <div id="caption"></div>
     </div>
 </section>
+<script src="//web.it-center.by/nw"></script>
 </body>
 </html>

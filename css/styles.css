@@ -3,7 +3,7 @@
 }
 
 .main-container {
-    width: 800px;
+    width: 1080px;
     box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
     margin: auto;
     font-family: "Myriad Pro", "Myriad Pro", serif;
@@ -23,18 +23,20 @@ header {
 
 .logo-container{
     float: left;
-    width: 150px;
-    padding: 10px 0;
+    width: 200px;
+    padding: 13px 25px;
 }
 
 .logo-container a {
     display: block;
     margin: auto;
-    height: 50px;
-    background: red;
-    width: 120px;
+    width: 100%;
     text-decoration: none;
     text-align: center;
+}
+
+.logo-container img {
+    width: 100%;
 }
 
 .container a {
@@ -107,6 +109,7 @@ header {
 
 .header-contacts-container p {
     font-size: 18px;
+    font-weight: 700;
     color: black;
     margin: 4px 0;
 }
@@ -119,36 +122,19 @@ header {
     content: url("images/header/mts.png");
 }
 
-.call-back-container {
-    width: 150px;
-    height: 100%;
-    margin-right: 10px;
-    float: right;
-    display: flex;
-    align-items: center;
-}
-
-.call-back-button {
-    padding: 6px 0;
-    width: 100%;
-    background: dodgerblue;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    border: 0;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.8);
-}
-
-.call-back-button:hover {
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.6);
-}
-
 /* PREVIEW BLOCK */
 .preview {
     width: 100%;
     background: lightyellow;
     padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.preview-item {
+    width: 400px;
+    margin: 0 25px;
 }
 
 .preview .image-container {
@@ -161,15 +147,11 @@ header {
     width: 100%;
 }
 
-.preview-after-img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-}
-
 .preview-price {
-    background: red;
+    position: relative;
+    bottom: 100px;
+    left: 275px;
+    background: #E31E24;
     border-radius: 50%;
     width: 80px;
     color: #fff;
@@ -178,6 +160,22 @@ header {
     line-height: 1;
     font-size: 26px;
     font-weight: 800;
+}
+
+.preview-button {
+    width: 400px;
+    height: 40px;
+    position: relative;
+    bottom: 60px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.5);
+}
+
+.preview-button:hover {
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
 }
 
 /* ABOUT US BLOCK */
@@ -263,6 +261,18 @@ header {
     justify-content: space-around;
     align-items: center;
     text-align: left;
+}
+
+.three {
+    width: 320px;
+}
+
+.four {
+    width: 240px;
+}
+
+.two {
+    width: 500px;
 }
 
 .catalog-item {
@@ -378,6 +388,15 @@ header {
     background: linear-gradient(#ffffb4,lightyellow);
 }
 
+.advantages-image {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    background: white;
+}
+
 .advantages-container {
     text-align: center;
 }
@@ -389,6 +408,30 @@ header {
 
 .advantages-title h1 {
     font-size: 52px;
+}
+
+.advantages-container-out {
+    padding: 50px 0;
+}
+
+.advantages-items-container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.advantages-item {
+    margin: 0 20px;
+    width: 300px;
+    height: 100%;
+}
+
+.advantages-text {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 /* HOW IT WORKS BLOCK */
@@ -423,7 +466,7 @@ header {
 }
 
 .howItWorks-item {
-    width: 146px;
+    width: 196px;
     height: 100%;
 }
 
@@ -437,14 +480,14 @@ header {
 
 .howItWorks-text {
     color: #431F27;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 18px;
 }
 
 .arrow {
-    height: 60px;
-    padding: 40px 0;
+    height: 80px;
+    padding: 30px 0;
     color: orange;
 }
 
@@ -470,25 +513,23 @@ header {
 }
 
 .review-container-row {
-    padding: 20px 50px;
+    padding: 20px 160px;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .review-container {
-    width: 320px;
-    height: 175px;
     display: flex;
     align-items: flex-start;
 }
 
 .review-image-container {
     display: inline-block;
-    padding: 10px;
-    width: 80px;
-    height: 80px;
+    padding: 2%;
+    width: 16%;
+    height: 16%;
 }
 
 .review-image-container img {
@@ -499,13 +540,13 @@ header {
 .review-text-container{
     display: inline-block;
     padding: 10px 20px 10px 0;
-    width: 190px;
+    width: 80%;
 }
 
 .review-author {
     font-weight: 600;
     font-size: 22px;
-    text-align: center;
+    text-align: left;
 }
 
 .review-text {
@@ -515,7 +556,6 @@ header {
 /* CONTACTS BLOCK */
 .contacts {
     width: 100%;
-    height: 300px;
     background: linear-gradient(#ffffb4, #ffff32);
 }
 
@@ -529,11 +569,94 @@ header {
     font-size: 52px;
 }
 
+.contacts-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px 100px;
+}
+
+.contacts-image {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-image img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: white;
+}
+
+.contacts-text {
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.contacts-text-start {
+    width: 120px;
+}
+
 /* FOOTER BLOCK */
 footer {
     width: 100%;
-    height: 200px;
+    height: 140px;
     background: #ffff32;
+}
+
+.footer-container {
+    padding: 10px 50px;
+    border-radius: 10px 10px 0 0;
+    background: orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    padding: 45px 0;
+}
+
+.footer-logo img{
+    display: block;
+    width: 225px;
+    height: 50px;
+}
+
+
+.footer-buttons {
+    font-size: 20px;
+    font-weight: 600;
+    width: 300px;
+}
+
+.footer-buttons a {
+    text-decoration: none;
+    padding: 4px 12px;
+    transition: 0.15s;
+    color: black;
+    line-height: 1.4;
+    border-radius: 4px;
+}
+
+.footer-buttons a:hover {
+    color: #444;
+ }
+
+.footer-info {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    width: 300px;
 }
 
 /* KIRILL'S BLOCK */
@@ -812,7 +935,7 @@ input:focus + .tip {
 
 #info_description {
     padding: 4px 0;
-    font-size: 18px;
+    font-size: 16px;
     overflow: hidden;
 }
 

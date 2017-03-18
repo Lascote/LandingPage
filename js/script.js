@@ -252,6 +252,13 @@ var InfoWindow = {
             if (n >= slides.length) {slideIndex = 0}
             if (n < 0) {slideIndex = slides.length - 1}
 
+            clearInterval(InfoWindow.slider.slideInterval);
+            if (InfoWindow.sliderTimeout !== null && InfoWindow.sliderTimeout !== undefined && slides.length > 1) {
+                InfoWindow.slider.slideInterval = setInterval(function () {
+                    InfoWindow.slider.showSlide(++InfoWindow.slider.current);
+                }, InfoWindow.sliderTimeout);
+            }
+
             InfoWindow.slider.current = slideIndex;
             InfoWindow.slider._slideElement.attr('src', slides[slideIndex]);
         },
@@ -301,6 +308,7 @@ var InfoWindow = {
         timerDate: null,
         description: null
     },
+    sliderTimeout: null,
 
     _isInit: false,
     init: function () {
@@ -347,7 +355,7 @@ var InfoWindow = {
             throw 'InfoWindow is not initialized.';
         }
 
-
+        InfoWindow.sliderTimeout = slideInterval;
 
         // Set Elements
         InfoWindow._product.html(product);
@@ -368,7 +376,7 @@ var InfoWindow = {
 
         InfoWindow.slider.slides = slides;
         InfoWindow.slider.showSlide(0);
-        if (InfoWindow.slider.slideInterval !== null) {
+        /*if (InfoWindow.slider.slideInterval !== null) {
             clearInterval(InfoWindow.slider.slideInterval);
         }
 
@@ -376,7 +384,7 @@ var InfoWindow = {
             InfoWindow.slider.slideInterval = setInterval(function () {
                 InfoWindow.slider.showSlide(++InfoWindow.slider.current);
             }, slideInterval);
-        }
+        }*/
 
         InfoWindow._background.show();
         InfoWindow._window.show();
